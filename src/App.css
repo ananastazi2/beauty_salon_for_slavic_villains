@@ -18,6 +18,12 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-container #routes-container {
+  flex-grow: 1;
+  position: static;
 }
 
 .button-clear-style {
