@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap');
+
+@font-face {
+  font-family: 'Galaktika';
+  src: local("Galaktika"),
+  url('../src/fonts/Galaktika.ttf') format("truetype");
+}
+
+body {
+  background-color: #001216;
+
+  font-family: 'ZCOOL XiaoWei', sans-serif;
+  color: #FFF;
+  text-shadow: 0px 4px 4px #000;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-clear-style {
+  background: none;
+  border: none;
+  color: white;
+  font-family: 'ZCOOL XiaoWei';
+  text-shadow: 0px 4px 4px #000;
+}

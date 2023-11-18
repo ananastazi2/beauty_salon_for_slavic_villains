@@ -1,0 +1,35 @@
+header {
+    margin-top: 3vh;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-bar a {
+    color: #FFF;
+    text-decoration: none;
+
+    text-align: center;
+   
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#logo {
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+@media(min-width: 1441px) {
+    .nav-bar a {
+        font-size: 30px;
+    }
+}
