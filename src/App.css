@@ -21,9 +21,8 @@ body {
   min-height: 100vh;
 }
 
-.app-container #routes-container {
+.app-container > *:nth-child(2) {
   flex-grow: 1;
-  position: static;
 }
 
 .button-clear-style {

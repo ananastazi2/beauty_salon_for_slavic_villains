@@ -105,3 +105,34 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (min-width: 1441px) {
+    #owner-image {
+        width: 84%;
+    }
+
+    #about-us-header {
+        margin-top: 4%;
+    }
+
+    .about-us figure {
+        margin-bottom: 2.5%;
+    }
+
+    .about-us figure figcaption {
+        text-align: none;
+    }
+
+    .outline {
+        left: 3%;
+        width: 85%;
+    }
+
+    .description {
+        margin-left: 0%;
+    }
+
+    .description p {
+        font-size: 28px;
+    }
+}

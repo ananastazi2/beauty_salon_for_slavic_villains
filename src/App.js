@@ -15,7 +15,6 @@ function App() {
   return (
     <div className='app-container'>
       <Header />
-      {/* <div id="routes-container"> */}
         <Routes>
           <Route path={routes.home} element={<Home />} /> {/* define the standard route */}
           <Route path={routes.services.base}>
@@ -28,7 +27,6 @@ function App() {
 
           <Route path="*" element={<PageNotFound />} /> {/* define every other possible route */}
         </Routes>
-      {/* </div> */}
       <Footer />
     </div>
   );
