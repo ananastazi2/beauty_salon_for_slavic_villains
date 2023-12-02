@@ -1,0 +1,474 @@
+html, body {
+    min-width: 375px; /* This sets the minimum width of the page */
+}
+
+
+.main-content2 {
+    position: relative;
+    min-height: 92vh;
+}
+
+#hair-header {
+    text-align: center;
+    font-size: 51px;
+    font-weight: normal;
+    margin-top: 5%;
+
+
+}
+
+
+
+.etno-letters2 {
+    font-family: 'Galaktika';
+    font-weight: 400;
+}
+
+.hair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .hair {
+        flex-direction: column; /* Stack image and text on top of each other */
+    }
+
+    /*.description2 {*/
+    /*    margin-top: 20px; !* Provide more space above *!*/
+    /*    margin-bottom: 20px; !* Provide more space below *!*/
+    /*}*/
+
+    .image-container1 {
+        width: 100%; /* При необхідності налаштуйте ширину */
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#image-container2 {
+    position: relative;
+    width: 250px;
+    height: 200px;
+}
+
+/*.etno-stripe2 {*/
+/*    width: 100%; !* Make the image width responsive to the container width *!*/
+/*    height: auto; !* Maintain the aspect ratio of the image *!*/
+/*    object-fit: cover; !* This will crop the image as the container resizes *!*/
+/*}*/
+
+
+
+.outline2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #006432;
+    top: 2%;
+    left: 5%;
+    z-index: -1;
+}
+
+.hair figure2 {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+}
+
+.hair figure2 figcaption2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 6%;
+}
+
+
+.description1 p {
+    margin-top: 0;
+    text-align: justify;
+    font-size: 24px;
+    /*font-family: 'Zen Kaku Gothic Antique';*/
+    font-weight: 400;
+}
+
+#image-container1 {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+}
+.description1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 30vh; !* Adjust as needed *!*/
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Zen Kaku Gothic Antique';
+
+
+}
+
+.description2 p {
+    margin-top: 0;
+    text-align: justify;
+    font-size: 24px;
+    /*font-family: 'Zen Kaku Gothic Antique';*/
+    font-weight: 400;
+}
+
+
+.description2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Adjust as needed */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*!* Updated CSS *!*/
+/*.etno-background-left {*/
+/*    position: absolute;*/
+/*    left: 3.5vw;*/
+/*    bottom: 0px;*/
+/*}*/
+
+/*.etno-background-under-header {*/
+/*    display: block;*/
+/*    width: 100%; !* Adjust as necessary for your layout *!*/
+/*    margin-top: 20px; !* Space above the image *!*/
+/*    margin-bottom: 20px; !* Space below the image *!*/
+/*}*/
+
+
+/*.to-services {*/
+/*    padding: 0;*/
+/*    padding-top: 3px;*/
+/*    align-self: flex-end;*/
+/*    display: grid;*/
+/*    grid-template-columns: calc(245px + 3.6vw);*/
+/*    align-items: center;*/
+/*}*/
+
+/*.to-services-label {*/
+/*    font-size: 24px;*/
+/*    grid-column-start: 1;*/
+/*    grid-row-start: 1;*/
+/*    justify-self: start;*/
+/*}*/
+
+/*#to-services-background {*/
+/*    grid-column-start: 1;*/
+/*    grid-row-start: 1;*/
+/*    justify-self: end;*/
+/*}*/
+
+.right-section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.image-text-container {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space out the children */
+    margin-top: 10px; /* Add top margin */
+    margin-bottom: 50px; /* Add bottom margin */
+
+
+}
+
+
+
+/*.sections-container {*/
+/*    display: flex; !* This will enable flexbox *!*/
+/*    flex-direction: row; !* This will place the children in a row *!*/
+/*}*/
+
+/*.what-to-expect, .benefits {*/
+/*    width: 50%;*/
+/*    flex: 1; !* This will make each section take up equal space *!*/
+/*    padding: 10px; !* Optional padding for spacing *!*/
+/*}*/
+
+.sections-container {
+    display: flex;
+    flex-direction: row;
+    /* Other styles... */
+}
+
+.what-to-expect, .benefits {
+    width: 50%;
+    flex: 1;
+    padding: 10px;
+    /* Other styles... */
+}
+
+/* Media query for screen sizes between 768px and 1440px */
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .what-to-expect, .benefits {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-text-container {
+        display: flex;
+        flex-direction: row; /* Aligns items in a row */
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px; /* 20px gap between each container */
+    }
+
+    .image-text-container img {
+        margin-right: 20px; /* 20px gap between the image and text */
+    }
+
+    .image-text-container:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+/* Media query for screen sizes smaller than 768px */
+@media screen and (max-width: 768px)  {
+    .image-text-container {
+        /* Stacking image and text vertically */
+        flex-direction: column; /* Aligns items in a column */
+        align-items: center; /* Center aligns the items */
+        text-align: center; /* Centers the text below the image */
+        margin-bottom: 20px; /* 20px gap between each container */
+    }
+
+    .image-text-container img {
+        margin-right: 0; /* Removes the gap to the right of the image */
+        margin-bottom: 20px; /* Adds 20px gap below the image */
+    }
+
+    .image-text-container:last-child {
+        margin-bottom: 0; /* Removes the margin from the last container */
+    }
+
+
+
+}
+
+
+
+
+/*.what-to-expect {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    width: 80vw;*/
+/*    margin: auto;*/
+/*}*/
+
+#image-container2 {
+    position: relative;
+
+}
+
+/*#owner-image {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    box-shadow: -11px -11px 8px 0px rgba(0, 0, 0, 0.25);*/
+
+/*}*/
+
+#image {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* To position your image relative to its parent */
+    top: 0; /* Align the top edge of the image with the container */
+    left: 0; /* Align the left edge of the image with the container */
+    box-shadow: -11px -11px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.outline2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #006432;
+    top: 2%;
+    left: 5%;
+    z-index: -1;
+}
+
+.what-to-expect figure2 {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+}
+
+.what-to-expect figure2 figcaption2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 6%;
+}
+
+.text-description {
+    margin-left: 1%;
+
+}
+
+.text-description p {
+    margin-top: 0;
+    text-align: justify;
+    font-size: 24px;
+    /*font-family: 'Zen Kaku Gothic Antique';*/
+    font-weight: 400;
+    width: 400px;
+}
+
+
+.text-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Adjust as needed */
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*.benefits {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    width: 80vw;*/
+/*    margin: auto;*/
+/*}*/
+
+
+
+.benefits figure2 {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+}
+
+.benefits figure2 figcaption2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 6%;
+}
+
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sections-container section {
+    flex-basis: 48%; /* Щоб забезпечити деякий простір між колонками */
+}
+
+
+
+.header-with-background2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+}
+
+.header-with-background2 h2 {
+    flex-basis: 50%; /* Кожен заголовок займає приблизно половину ширини контейнера */
+    text-align: center; /* Центруємо текст кожного заголовку */
+}
+
+/* Опціонально, щоб забезпечити відступ між заголовками */
+.header-with-background2 h2:not(:last-child) {
+    margin-right: 10px; /* Додаємо відступ справа до першого заголовка */
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Додає проміжок між колонками */
+}
+
+.price-description {
+    flex-basis: 50%; /* Кожна колонка займає половину доступного простору */
+    /* Або можна використати flex: 1; для рівного розподілу простору між колонками */
+    margin: 10px 100px;
+    padding: 10px;
+    border-radius: 8px; /* Закруглені кути */
+    font-size: 24px;
+}
+
+/* Стилі для заголовків і списків всередині .price-description */
+.price-description p {
+    font-weight: bold; /* Жирний шрифт для заголовків */
+    margin-bottom: 10px; /* Відступ знизу для заголовків */
+}
+
+.price-description ul {
+    /*list-style-type: none; !* Видалення стандартних маркерів списку *!*/
+    padding: 0; /* Видалення відступів списку */
+}
+
+.price-description li {
+    margin-bottom: 5px; /* Відступ знизу для елементів списку */
+}
+
+/* Додайте будь-які додаткові стилі, які ви хочете використати для красивого оформлення */
+
+
+
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your specific breakpoint */
+    .description2 p {
+        width: 100%; /* Adjust this width until the text breaks as desired */
+        margin: 0 auto; /* This centers the paragraph if the container is wider than the paragraph */
+        /* Any additional styling you want to apply specifically for tablets */
+    }
+}
+
+/* Media query for screens smaller than 425px */
+@media screen and (max-width: 425px) {
+    .text-description {
+        padding: 0 10px; /* Adds padding of 10px to left and right */
+    }
+}
+
+
+
+
+
+
+
+
