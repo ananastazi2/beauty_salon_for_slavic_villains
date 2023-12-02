@@ -1,7 +1,10 @@
+.landing-page-container {
+    display: block;
+}
 .landing-page {
     margin: 0;
-    height: calc(100vh - 104px);
     display: flex;
+    height: calc(100vh - 14vh);
     flex-direction: column;
 }
 
@@ -24,8 +27,8 @@
     margin: 0;
 
     margin-top: 13%;
-    margin-bottom: 20%;
-    margin-left: 5vw;
+    margin-bottom: 20vh;
+    margin-left: 6.5vw;
 
     display: flex;
     flex-direction: column;
@@ -88,7 +91,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1038px) {
     .pre-body {
         font-size: 16px;
     }
@@ -98,7 +101,29 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .landing-page {
+        height: calc(100vh - 14vh);
+    }
+}
+
+@media (max-width: 922px) {
+    .landing-page {
+        height: calc(100vh - 13vh);
+    }
+}
+
+@media (max-width: 792px) {
+    .landing-page {
+        height: calc(100vh - 12vh);
+    }
+}
+
 @media (max-width: 768px) {
+    .landing-page {
+        height: calc(100vh - 11vh);
+    }
+
     .header-text {
         margin-top: 30vh;
         margin-left: 0;
@@ -129,6 +154,38 @@
     }
 }
 
-@media (max-width: 654px) {
+@media (max-width: 728px) {
+    .header-text {
+        margin-bottom: 18vh;
+    }
+}
+
+@media (max-width: 688px) {
+    .landing-page {
+        height: calc(100vh - 10vh);
+    }
+
+    .pre-body {
+        font-size: 14px;
+    }
     
+    .header-body {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 598px) {
+    .landing-page {
+        height: calc(100vh - 9vh);
+    }
+
+    .header-body {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 514px) {
+    .landing-page {
+        height: calc(100vh - 8vh);
+    }
 }

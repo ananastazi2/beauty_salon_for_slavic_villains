@@ -16,7 +16,14 @@ function App() {
     <div className='app-container'>
       <Header />
         <Routes>
-          <Route path={routes.home} element={<Home />} /> {/* define the standard route */}
+          <Route path={routes.home} 
+              element={
+                <>
+                  <div id='background-img'></div>
+                  <Home />
+                </>
+              } 
+          /> {/* define the standard route */}
           <Route path={routes.services.base}>
             <Route index element={<Services />} />
             <Route path={routes.services.all} element={<Services />} />

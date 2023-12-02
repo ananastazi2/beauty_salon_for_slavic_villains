@@ -7,35 +7,36 @@ import etnoStripeBackground from '../../images/etnoSymbolsDetails/about_us_backg
 function Home() {
   return (
     <>
-        <div id='background-img'></div>
-        <header className='landing-page'>
-            <p className='header-text'>
-                <span className='pre-body'>Beauty salon in the dense Dark Forest Kingdom</span>
-                <br></br>
-                <span className='header-body'>A place where every shade of beauty is felt in the dark</span>
-            </p>
-            <button className='button-clear-style scroll-down'>
-                <span className='label'>SEE THE ROOTS</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="39" viewBox="0 0 41 39" fill="none" id='arrow-down'>
-                    <g filter="url(#filter0_d_17_37)">
-                        <path d="M3 2L7.5 8.5H33.5L38 2" stroke="white" strokeWidth="2"/>
-                        <path d="M32 14.5H9.5L21 33.5L32 14.5Z" stroke="white" strokeWidth="2"/>
-                    </g>
-                    <defs>
-                        <filter id="filter0_d_17_37" x="0.177807" y="0.430786" width="40.6444" height="38.032" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset dy="1"/>
-                            <feGaussianBlur stdDeviation="1"/>
-                            <feComposite in2="hardAlpha" operator="out"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_37"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_37" result="shape"/>
-                        </filter>
-                    </defs>
-                </svg>
-            </button>
-        </header>
+        <div className='landing-page-container'>
+            <header className='landing-page'>
+                <p className='header-text'>
+                    <span className='pre-body'>Beauty salon in the dense Dark Forest Kingdom</span>
+                    <br></br>
+                    <span className='header-body'>A place where every shade of beauty is felt in the dark</span>
+                </p>
+                <button className='button-clear-style scroll-down'>
+                    <span className='label'>SEE THE ROOTS</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="39" viewBox="0 0 41 39" fill="none" id='arrow-down'>
+                        <g filter="url(#filter0_d_17_37)">
+                            <path d="M3 2L7.5 8.5H33.5L38 2" stroke="white" strokeWidth="2"/>
+                            <path d="M32 14.5H9.5L21 33.5L32 14.5Z" stroke="white" strokeWidth="2"/>
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_17_37" x="0.177807" y="0.430786" width="40.6444" height="38.032" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="1"/>
+                                <feGaussianBlur stdDeviation="1"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_37"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_37" result="shape"/>
+                            </filter>
+                        </defs>
+                    </svg>
+                </button>
+            </header>
+        </div>
 
         <main className='main-content'>
             <h1 id='about-us-header'>Abou<span className='etno-letters'>t</span> us</h1>
@@ -85,6 +86,8 @@ function Home() {
                             </defs>
                         </svg>
                     </button>
+
+
                 </div>
                 <img src={etnoStripeBackground} className='etno-background-right' />
             </section>
