@@ -1,0 +1,308 @@
+.contact-page {
+    /* Adjust the styles for landing-page if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the landing page takes up all the container height */
+    padding-top: 100px; /* Add padding to avoid overlapping the text */
+}
+
+/*#background-img1 {*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    position: fixed; !* If you want the image to stay in place while scrolling *!*/
+/*    z-index: -1;*/
+/*    background: url('../../images/contacts/contacts.jpg') no-repeat center center;*/
+/*    background-size: cover;*/
+/*}*/
+
+#background-img1 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background: url('../../images/contacts/contacts.jpg') no-repeat center center;
+    background-size: cover;
+
+}
+
+
+.header-text1 {
+    position: absolute; /* Absolute positioning relative to the parent */
+    top: 5%; /* Adjust as per the design */
+    left: 5%; /* Adjust as per the design */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+}
+
+.pre-body1 {
+    color: #E2DDE1;
+    font-size: 20px;
+    width: auto; /* Adjust width as necessary */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children (h1 and button) to the start (left) */
+}
+
+.header-body1 {
+    font-size: 62px;
+    margin: 0 0 20px 0; /* Add some bottom margin to space out the button */
+    /* Adjust the left and right margins if necessary */
+}
+
+.button-clear-style {
+    /* Adjust button styles if necessary */
+    /* No need for margin-top here since it's handled by header-body's margin-bottom */
+}
+
+.label {
+    margin-bottom: 1.5vh;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+
+.contacts-container {
+    position: relative;
+    height: 120vh; /* Adjust height as necessary */
+    background: url('../../images/contacts/contacts.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
+.contact-form {
+    width: 80%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 800px;
+    font-size: 24px;
+
+
+    /* Updated green glow effect with the new color */
+    box-shadow: 0 0 100px 5px rgba(1, 156, 124, 0.7); /* Glow effect using the color #019C7C */
+}
+
+.input-group {
+    margin-bottom: 1em; /* Space between input groups */
+}
+
+.input-group label {
+    display: block;
+    color: #fff; /* White color for the text */
+    margin-bottom: .5em; /* Space between label and input field */
+    font-size: 1em; /* Adjust the size as needed */
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #006432; /* Green color for the input bottom border */
+    color: #fff; /* White color for the input text */
+    padding: 10px 0;
+    font-size: 1em; /* Adjust the size as needed */
+    text-align: center; /* Centers the placeholder text */
+    height: 60px; /* Set the height to 40px */
+    box-sizing: border-box;
+}
+
+/* Style the placeholder text */
+::placeholder {
+    color: #fff; /* White color for the placeholder text */
+    opacity: 1; /* Make sure the placeholder is fully visible */
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #006432; /* Green color for the input bottom border when focused */
+}
+
+/* Adjust textarea to match input fields in height */
+.input-group textarea {
+    height: 60px; /* Same as the input fields */
+    padding: 10px 0; /* To match the input fields */
+    resize: none; /* Prevents resizing of textarea */
+}
+
+
+.button-clear-style {
+    position: absolute; /* Position the button absolutely within its parent */
+    left: 50%; /* Center the button from the left side of the parent */
+    bottom: 20px; /* Distance from the bottom of the parent */
+    transform: translateX(-50%); /* Shift the button back to truly center it */
+    /* Add any other styling necessary for the button */
+}
+
+
+.to-contact-label {
+    font-size: 24px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: start;
+    color: white;
+    z-index: 1; /* це забезпечує, що текст буде над SVG */
+    position: relative; /* потрібно для коректної роботи z-index */
+}
+
+textarea {
+    background-color: #001216;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    color: #FFF;
+    text-shadow: 0px 4px 4px #000;
+    font-size: 36px; /* Adjust the size as needed */
+}
+
+input {
+    background-color: #001216;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    color: #FFF;
+    text-shadow: 0px 4px 4px #000;
+    font-size: 36px; /* Adjust the size as needed */
+}
+
+.background-right {
+    position: absolute;
+    right: 3.5vw;
+    top: 0;
+    height: 120vh; /* Set the height to be 100% of the viewport height */
+    width: auto; /* Adjust the width automatically to maintain the image's aspect ratio */
+    object-fit: cover; /* Ensure the image covers the set height fully without distortion */
+}
+
+.to-contact {
+    padding: 0;
+    padding-top: 3px;
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: calc(245px + 3.6vw);
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .contacts-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1000px;
+        position: relative;
+        top: 108px;
+        left: 1px;
+    }
+
+    .contact-page {
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form {
+        margin: 0 auto; /* Центрування форми горизонтально */
+        margin-bottom: 20px; /* Відступ знизу форми */
+        position: relative;
+    }
+
+    .button-clear-style {
+        position: absolute;
+        left: 50%;
+        bottom: 70px; /* Збільшіть значення 'bottom' для підняття кнопки вище */
+        transform: translateX(-50%);
+    }
+    .background-right {
+        position: absolute;
+        right: 3.5vw;
+        top: 0;
+        height: 114vh;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+@media(min-width: 1441px) {
+    .pre-body {
+        font-size: 24px;
+    }
+
+    .header-body {
+        font-size: 64px;
+    }
+
+    .label {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1334px) {
+    .pre-body {
+        font-size: 18px;
+    }
+
+    .header-body {
+        font-size: 60px;
+    }
+
+    .scroll-down {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pre-body {
+        font-size: 16px;
+    }
+
+    .header-body {
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        margin-top: 30vh;
+        margin-left: 0;
+        margin-bottom: 28vh;
+    }
+
+    .pre-body, .header-body {
+        align-self: center;
+        text-align: center;
+    }
+
+    .pre-body {
+        width: 100%;
+    }
+
+    .header-body {
+        font-size: 48px;
+        width: 76%;
+    }
+
+    .label {
+        font-size: 24px;
+    }
+
+    #arrow-down {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 654px) {
+
+}
