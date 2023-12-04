@@ -1,0 +1,289 @@
+html, body {
+    min-width: 375px; /* This sets the minimum width of the page */
+}
+
+#image-container-team {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    z-index: 1;
+}
+
+
+
+
+.hair figure2 {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+}
+
+.hair figure2 figcaption2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 6%;
+}
+
+
+.description1 p {
+    margin-top: 0;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+
+
+.description1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 30vh; !* Adjust as needed *!*/
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Zen Kaku Gothic Antique';
+
+
+}
+
+.description2 p {
+    margin-top: 0;
+    text-align: justify;
+    font-size: 24px;
+    /*font-family: 'Zen Kaku Gothic Antique';*/
+    font-weight: 400;
+}
+
+
+.description2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Adjust as needed */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.right-section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image-text-container-team {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: center; /* Align items vertically in the center */
+    width: auto; /* Adjust the width as needed */
+    margin-bottom: 600px; /* Space between rows */
+    margin-right: 70px; /* Додає правий відступ до кожного контейнера */
+    margin-left: 70px; /* Додає лівий відступ до кожного контейнера */
+
+    /* Optional: Add wrapping if the items don't fit in one row */
+    flex-wrap: wrap;
+}
+
+
+.sections-container-team {
+    display: flex;
+    flex-direction: column; /* Changed to column to stack children vertically */
+    /* Keep other styles as they are */
+}
+
+
+.first-column, .second-column {
+    display: flex; /* Включаємо flexbox */
+    flex-direction: row; /* Елементи вирівнюються в рядок */
+    flex-wrap: wrap; /* Дозволяємо елементам обертатися на наступний рядок, якщо не вистачає місця */
+    justify-content: flex-start; /* Вирівнювання елементів на початку контейнера */
+    align-items: stretch; /* Елементи розтягуються, щоб заповнити контейнер по вертикалі */
+    width: 100%; /* Колонки займають 100% ширини контейнера */
+    /* Інші стилі... */
+}
+
+
+
+
+.first-column figure2 {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+}
+
+.first-column figure2 figcaption2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 6%;
+}
+
+
+
+
+
+.first-section-team {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.second-column figure2 {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+}
+
+.second-column figure2 figcaption2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 6%;
+}
+
+
+.second-section-team {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sections-container-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sections-container-team section {
+    flex-basis: 48%; /* Щоб забезпечити деякий простір між колонками */
+}
+
+
+
+
+
+
+#image-team {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: -11px -11px 8px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.etno-stripe-team {
+    width: 100%; /* Make the image width responsive to the container width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* This will crop the image as the container resizes */
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+
+.outline-team {
+    position: relative;
+    width: 300px; /* Adjust width as desired */
+    height: 700px; /* Adjust height as desired */
+    border: 1px solid #006432;
+    top: 2%;
+    left: 5%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрує вміст по вертикалі */
+    text-align: center;
+    align-items: center;
+}
+
+.text-description-team b {
+    display: block; /* Зробіть <b> блочним елементом, щоб можна було застосувати відступи */
+    text-align: center;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+}
+.text-description-team p {
+    margin-top: 0;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+    width: 350px;
+    text-justify: inter-word; /* Покращує вирівнювання, додаючи пробіли між словами */
+    font-family: 'Zen Kaku Gothic Antique';
+}
+
+
+.text-description-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Adjust as needed */
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: 2; /* Ensure it's above the image */
+    font-size: 24px;
+    position: absolute;
+    top: 350px; /* Adjust this value to move down */
+    left: 10px; /* Adjust this value to move right */
+    right: 5px; /* Adjust this value to provide space on the right */
+    bottom: 10px;
+}
+
+
+/* Base styles for .sections-container-team */
+.sections-container-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*!* Styles for screens with width between 1440px and 1000px *!*/
+/*@media screen and (min-width: 1000px) and (max-width: 1440px) {*/
+/*    .sections-container-team section {*/
+/*        flex-basis: calc(33.33% - 20px); !* Adjust 33.33% for 3 items in a row, minus margin *!*/
+/*        margin: 10px; !* Adjust margins as needed *!*/
+/*        justify-content: center;*/
+/*    }*/
+/*}*/
+
+/* Styles for screens with width between 768px and 1000px */
+@media screen and (min-width: 425px) and (max-width: 1440px) {
+    .sections-container-team section {
+        flex-basis: calc(50% - 20px); /* Adjust 50% for 2 items in a row, minus margin */
+        margin: 10px; /* Adjust margins as needed */
+        justify-content: center; /* Center items */
+    }
+    .image-text-container-team {
+        justify-content: space-around; /* Adjust spacing for smaller screens */
+        margin-left: 4px;
+    }
+    .sections-container-team {
+        justify-content: space-around; /* Adjust spacing for smaller screens */
+        margin-left: 1px;
+    }
+}
+
+
+
+/* Additional adjustments for smaller screens */
+@media screen and (max-width: 425px) {
+    .sections-container-team {
+        justify-content: space-around; /* Adjust spacing for smaller screens */
+        margin-left: 1px;
+    }
+    .sections-container-team section {
+        flex-basis: 100%; /* Full width for very small screens */
+        /* Adjust vertical margin, remove horizontal margin */
+        justify-content: center;
+
+    }
+    .image-text-container-team {
+        justify-content: space-around; /* Adjust spacing for smaller screens */
+        margin-left: 4px;
+    }
+
+}

@@ -73,7 +73,7 @@ function WitchingHairRituals() {
 
 
             <section className='what-to-expect'>
-              <h2 id='about-us-header'>What to Expect:</h2>
+              <h2 id='hair-header2'>What to Expect:</h2>
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
@@ -176,7 +176,7 @@ function WitchingHairRituals() {
             </section>
 
             <section className='benefits'>
-              <h2 id='about-us-header'>Benefits of the Ritual:</h2>
+              <h2 id='hair-header2'>Benefits of the Ritual:</h2>
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
