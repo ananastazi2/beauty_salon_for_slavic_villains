@@ -80,7 +80,7 @@
 
 
 .contact-form {
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
     padding: 20px;
@@ -96,6 +96,22 @@
 
 .input-group {
     margin-bottom: 1em; /* Space between input groups */
+}
+
+
+@media screen and (max-width: 1440px) { /* Задайте поріг для медіа-запиту згідно з вашими потребами */
+
+    .contact-form {
+
+        margin-right: 20px;
+
+    }
+}
+@media (max-width: 685px) {
+    .contact-form {
+        width: 70%; /* Відсоткове значення для адаптивності */
+        font-size: 18px; /* Можна зменшити розмір шрифту для кращої адаптивності */
+    }
 }
 
 .input-group label {
@@ -192,117 +208,136 @@ input {
     align-items: center;
 }
 
-@media (max-width: 768px) {
-    .contacts-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 1000px;
-        position: relative;
-        top: 108px;
-        left: 1px;
-    }
 
-    .contact-page {
-        width: 768px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .contact-form {
-        margin: 0 auto; /* Центрування форми горизонтально */
-        margin-bottom: 20px; /* Відступ знизу форми */
-        position: relative;
-    }
 
-    .button-clear-style {
-        position: absolute;
-        left: 50%;
-        bottom: 70px; /* Збільшіть значення 'bottom' для підняття кнопки вище */
-        transform: translateX(-50%);
-    }
-    .background-right {
-        position: absolute;
-        right: 3.5vw;
-        top: 0;
-        height: 114vh;
-        width: auto;
-        object-fit: cover;
-    }
-}
 
-@media(min-width: 1441px) {
-    .pre-body {
-        font-size: 24px;
-    }
 
-    .header-body {
-        font-size: 64px;
-    }
 
-    .label {
-        font-size: 32px;
-    }
-}
 
-@media (max-width: 1334px) {
-    .pre-body {
-        font-size: 18px;
-    }
 
-    .header-body {
-        font-size: 60px;
-    }
 
-    .scroll-down {
-        width: 25vw;
-    }
-}
 
-@media (max-width: 1024px) {
-    .pre-body {
-        font-size: 16px;
-    }
 
-    .header-body {
-        font-size: 54px;
-    }
-}
 
-@media (max-width: 768px) {
-    .header-text {
-        margin-top: 30vh;
-        margin-left: 0;
-        margin-bottom: 28vh;
-    }
 
-    .pre-body, .header-body {
-        align-self: center;
-        text-align: center;
-    }
 
-    .pre-body {
-        width: 100%;
-    }
 
-    .header-body {
-        font-size: 48px;
-        width: 76%;
-    }
 
-    .label {
-        font-size: 24px;
-    }
 
-    #arrow-down {
-        width: 30%;
-        height: 30%;
-    }
-}
 
-@media (max-width: 654px) {
+/*@media (max-width: 768px) {*/
+/*    .contacts-container {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        justify-content: center;*/
+/*        height: 1000px;*/
+/*        position: relative;*/
+/*        top: 108px;*/
+/*        left: 1px;*/
+/*    }*/
 
-}
+/*    .contact-page {*/
+/*        width: 768px;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    .contact-form {*/
+/*        margin: 0 auto; !* Центрування форми горизонтально *!*/
+/*        margin-bottom: 20px; !* Відступ знизу форми *!*/
+/*        position: relative;*/
+/*    }*/
+
+/*    .button-clear-style {*/
+/*        position: absolute;*/
+/*        left: 50%;*/
+/*        bottom: 70px; !* Збільшіть значення 'bottom' для підняття кнопки вище *!*/
+/*        transform: translateX(-50%);*/
+/*    }*/
+/*    .background-right {*/
+/*        position: absolute;*/
+/*        right: 3.5vw;*/
+/*        top: 0;*/
+/*        height: 114vh;*/
+/*        width: auto;*/
+/*        object-fit: cover;*/
+/*    }*/
+/*}*/
+
+/*@media(min-width: 1441px) {*/
+/*    .pre-body {*/
+/*        font-size: 24px;*/
+/*    }*/
+
+/*    .header-body {*/
+/*        font-size: 64px;*/
+/*    }*/
+
+/*    .label {*/
+/*        font-size: 32px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1334px) {*/
+/*    .pre-body {*/
+/*        font-size: 18px;*/
+/*    }*/
+
+/*    .header-body {*/
+/*        font-size: 60px;*/
+/*    }*/
+
+/*    .scroll-down {*/
+/*        width: 25vw;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 1024px) {*/
+/*    .pre-body {*/
+/*        font-size: 16px;*/
+/*    }*/
+
+/*    .header-body {*/
+/*        font-size: 54px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 768px) {*/
+/*    .header-text {*/
+/*        margin-top: 30vh;*/
+/*        margin-left: 0;*/
+/*        margin-bottom: 28vh;*/
+/*    }*/
+
+/*    .pre-body, .header-body {*/
+/*        align-self: center;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    .pre-body {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .header-body {*/
+/*        font-size: 48px;*/
+/*        width: 76%;*/
+/*    }*/
+
+/*    .label {*/
+/*        font-size: 24px;*/
+/*    }*/
+
+/*    #arrow-down {*/
+/*        width: 30%;*/
+/*        height: 30%;*/
+/*    }*/
+/*}*/
+
+
+
+
+

@@ -12,12 +12,17 @@ html, body {
     text-align: center;
     font-size: 51px;
     font-weight: normal;
-    margin-top: 5%;
+    margin-top: 20px;
 
 
 }
+#hair-header2 {
+    text-align: center;
+    font-size: 51px;
+    font-weight: normal;
+    margin-top: 10px;
 
-
+}
 
 .etno-letters2 {
     font-family: 'Galaktika';
@@ -461,13 +466,32 @@ html, body {
 /* Media query for screens smaller than 425px */
 @media screen and (max-width: 425px) {
     .text-description {
-        padding: 0 10px; /* Adds padding of 10px to left and right */
+         padding: 10%;/* Adds padding of 10px to left and right */
     }
 }
 
+@media screen and (max-width: 900px) { /* Задайте поріг для медіа-запиту згідно з вашими потребами */
+    .container {
+        flex-direction: column; /* На малих екранах блоки будуть розташовуватися один під іншим */
+    }
+}
 
+@media screen and (max-width: 425px) { /* Задайте поріг для медіа-запиту згідно з вашими потребами */
 
+    .price-description li{
+        width: 100%; /* Adjust this width until the text breaks as desired */
+        margin: 0 auto;
+    }
+    .description2{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
 
+.description2{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
 
 
 

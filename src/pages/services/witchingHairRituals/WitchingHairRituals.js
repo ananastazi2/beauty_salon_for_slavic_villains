@@ -38,7 +38,7 @@ function WitchingHairRituals() {
 
 
           <div className="header-with-background2">
-            <h2 id='about-us-header'>Rusalka's Witching Hair Rituals</h2>
+            <h2 id='hair-header2'>Rusalka's Witching Hair Rituals</h2>
 
           </div>
 
@@ -287,7 +287,7 @@ function WitchingHairRituals() {
           <img src={stripe} className='etno-stripe2' alt="Decorative Stripe"/>
 
           <div className="header-with-background2">
-            <h2 id='about-us-header'>Price List</h2>
+            <h2 id='hair-header2'>Price List</h2>
 
           </div>
 
