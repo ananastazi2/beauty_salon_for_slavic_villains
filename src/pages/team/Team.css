@@ -1,5 +1,5 @@
 html, body {
-    min-width: 375px; /* This sets the minimum width of the page */
+    min-width: 375px;
 }
 
 #image-container-team {
@@ -7,19 +7,6 @@ html, body {
     width: 250px;
     height: 200px;
     z-index: 1;
-}
-
-
-.hair figure2 {
-    display: flex;
-    flex-direction: column;
-    width: 110%;
-}
-
-.hair figure2 figcaption2 {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 6%;
 }
 
 
@@ -35,7 +22,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 30vh; !* Adjust as needed *!*/
+
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Zen Kaku Gothic Antique';
@@ -47,7 +34,7 @@ html, body {
     margin-top: 0;
     text-align: justify;
     font-size: 24px;
-    /*font-family: 'Zen Kaku Gothic Antique';*/
+
     font-weight: 400;
 }
 
@@ -56,7 +43,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Adjust as needed */
+    height: 30vh;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -70,66 +57,39 @@ html, body {
 
 .image-text-container-team {
     display: flex;
-    flex-direction: row; /* Align items in a row */
-    justify-content: flex-start; /* Align items to the start of the container */
-    align-items: center; /* Align items vertically in the center */
-    width: auto; /* Adjust the width as needed */
-    margin-bottom: 600px; /* Space between rows */
-    margin-right: 70px; /* Додає правий відступ до кожного контейнера */
-    margin-left: 70px; /* Додає лівий відступ до кожного контейнера */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    margin-bottom: 600px;
+    margin-right: 70px;
+    margin-left: 70px;
 
-    /* Optional: Add wrapping if the items don't fit in one row */
+
     flex-wrap: wrap;
 }
 
 
 .sections-container-team {
     display: flex;
-    flex-direction: column; /* Changed to column to stack children vertically */
-    /* Keep other styles as they are */
+    flex-direction: column;
 }
 
 
 .first-column, .second-column {
-    display: flex; /* Включаємо flexbox */
-    flex-direction: row; /* Елементи вирівнюються в рядок */
-    flex-wrap: wrap; /* Дозволяємо елементам обертатися на наступний рядок, якщо не вистачає місця */
-    justify-content: flex-start; /* Вирівнювання елементів на початку контейнера */
-    align-items: stretch; /* Елементи розтягуються, щоб заповнити контейнер по вертикалі */
-    width: 100%; /* Колонки займають 100% ширини контейнера */
-    /* Інші стилі... */
-}
-
-
-.first-column figure2 {
     display: flex;
-    flex-direction: column;
-    width: 110%;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
 
-.first-column figure2 figcaption2 {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 6%;
 }
 
 
 .first-section-team {
     display: flex;
     flex-direction: column;
-}
-
-
-.second-column figure2 {
-    display: flex;
-    flex-direction: column;
-    width: 110%;
-}
-
-.second-column figure2 figcaption2 {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 6%;
 }
 
 
@@ -146,14 +106,14 @@ html, body {
 }
 
 .sections-container-team section {
-    flex-basis: 48%; /* Щоб забезпечити деякий простір між колонками */
+    flex-basis: 48%;
 }
 
 
 .etno-stripe-team {
-    width: 100%; /* Make the image width responsive to the container width */
-    height: auto; /* Maintain the aspect ratio of the image */
-    object-fit: cover; /* This will crop the image as the container resizes */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     margin-bottom: 5%;
     margin-top: 3%;
 }
@@ -161,21 +121,21 @@ html, body {
 
 .outline-team {
     position: relative;
-    width: 300px; /* Adjust width as desired */
-    height: 700px; /* Adjust height as desired */
+    width: 300px;
+    height: 700px;
     border: 1px solid #006432;
     top: 2%;
     left: 5%;
     z-index: -1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрує вміст по вертикалі */
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
 
 .text-description-team b {
-    display: block; /* Зробіть <b> блочним елементом, щоб можна було застосувати відступи */
+    display: block;
     text-align: center;
     font-family: 'ZCOOL XiaoWei', sans-serif;
 }
@@ -186,7 +146,7 @@ html, body {
     font-size: 24px;
     font-weight: 400;
     width: 350px;
-    text-justify: inter-word; /* Покращує вирівнювання, додаючи пробіли між словами */
+    text-justify: inter-word;
     font-family: 'Zen Kaku Gothic Antique';
 }
 
@@ -195,72 +155,61 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Adjust as needed */
+    height: 30vh;
     text-align: center;
     margin-left: 1%;
     margin-right: 1%;
-    z-index: 2; /* Ensure it's above the image */
+    z-index: 2;
     font-size: 24px;
     position: absolute;
-    top: 350px; /* Adjust this value to move down */
-    left: 10px; /* Adjust this value to move right */
-    right: 5px; /* Adjust this value to provide space on the right */
+    top: 350px;
+    left: 10px;
+    right: 5px;
     bottom: 10px;
 }
 
 
-/* Base styles for .sections-container-team */
 .sections-container-team {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/*!* Styles for screens with width between 1440px and 1000px *!*/
-/*@media screen and (min-width: 1000px) and (max-width: 1440px) {*/
-/*    .sections-container-team section {*/
-/*        flex-basis: calc(33.33% - 20px); !* Adjust 33.33% for 3 items in a row, minus margin *!*/
-/*        margin: 10px; !* Adjust margins as needed *!*/
-/*        justify-content: center;*/
-/*    }*/
-/*}*/
 
-/* Styles for screens with width between 768px and 1000px */
 @media screen and (min-width: 425px) and (max-width: 1440px) {
     .sections-container-team section {
-        flex-basis: calc(50% - 20px); /* Adjust 50% for 2 items in a row, minus margin */
-        margin: 10px; /* Adjust margins as needed */
-        justify-content: center; /* Center items */
+        flex-basis: calc(50% - 20px);
+        margin: 10px;
+        justify-content: center;
     }
 
     .image-text-container-team {
-        justify-content: space-around; /* Adjust spacing for smaller screens */
+        justify-content: space-around;
         margin-left: 4px;
     }
 
     .sections-container-team {
-        justify-content: space-around; /* Adjust spacing for smaller screens */
+        justify-content: space-around;
         margin-left: 1px;
     }
 }
 
 
-/* Additional adjustments for smaller screens */
 @media screen and (max-width: 425px) {
     .sections-container-team {
-        justify-content: space-around; /* Adjust spacing for smaller screens */
+        justify-content: space-around;
         margin-left: 1px;
     }
 
     .sections-container-team section {
-        flex-basis: 100%; /* Full width for very small screens */
-        /* Adjust vertical margin, remove horizontal margin */
+        flex-basis: 100%;
+
         justify-content: center;
 
     }
 
     .image-text-container-team {
-        justify-content: space-around; /* Adjust spacing for smaller screens */
+        justify-content: space-around;
         margin-left: 4px;
     }
 
@@ -275,33 +224,34 @@ html, body {
     left: 0;
     box-shadow: -11px -11px 8px 0px rgba(0, 0, 0, 0.25);
 
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 #image-team:hover {
-    box-shadow: 0 0 100px 5px rgba(1, 156, 124, 0.7); /* Green glow effect on hover */
+    box-shadow: 0 0 100px 5px rgba(1, 156, 124, 0.7);
 }
 
-.candle{
+.candle {
     width: 15em;
     height: 30em;
     font-size: 7px;
     background: linear-gradient(
-            #006432, /* Замінено на непрозорий варіант */
-            #006432, /* Замінено на непрозорий варіант */
+            #006432,
+            #006432,
             #006432,
             #006432 20%,
-            rgb(0,0,0) /* Замінено на непрозорий варіант */
+            rgb(0, 0, 0)
     );
     box-shadow: inset 2em -3em 5em rgba(0, 0, 0, 0.4),
-                inset -2em 0 54em rgba(0, 0, 0, 0.4);
+    inset -2em 0 54em rgba(0, 0, 0, 0.4);
     border-radius: 10em / 4em;
     position: relative;
     display: flex;
     justify-content: center;
     top: 10em;
 }
-.candle::before{
+
+.candle::before {
     content: '';
     position: absolute;
     width: inherit;
@@ -318,7 +268,8 @@ html, body {
     );
     filter: opacity(0.7);
 }
-.thread{
+
+.thread {
     position: absolute;
     width: 0.6em;
     height: 3.6em;
@@ -330,11 +281,13 @@ html, body {
     );
     border-radius: 40% 40% 0 0;
 }
-.flames{
+
+.flames {
     position: absolute;
     width: 2.4em;
 }
-.flames::before{
+
+.flames::before {
     content: '';
     position: absolute;
     width: inherit;
@@ -346,7 +299,8 @@ html, body {
     box-sizing: border-box;
     filter: opacity(0.7);
 }
-.flames::after{
+
+.flames::after {
     content: '';
     position: absolute;
     width: inherit;
@@ -358,25 +312,28 @@ html, body {
     animation: enlarge 5s linear infinite,
     move 6s linear infinite;
 }
-@keyframes move{
-    0%, 100%{
+
+@keyframes move {
+    0%, 100% {
         transform: rotate(2deg);
     }
-    50%{
+    50% {
         transform: rotate(-2deg);
     }
 }
-@keyframes enlarge{
-    0%, 100%{
+
+@keyframes enlarge {
+    0%, 100% {
         height: 12em;
         top: -12em;
     }
-    50%{
+    50% {
         height: 14em;
         top: -13em;
     }
 }
-.glow{
+
+.glow {
     position: absolute;
     width: 10em;
     height: 18em;
@@ -386,113 +343,147 @@ html, body {
     filter: blur(6em);
     animation: blink 100ms infinite;
 }
-@keyframes blink{
-    to{
+
+@keyframes blink {
+    to {
         filter: blur(6em) opacity(0.8);
     }
 }
+
 #candle1 {
-    transform: translateZ(50px) scale(1.1); /* Більша та ближча */
+    transform: translateZ(50px) scale(1.1);
 }
 
 #candle2 {
 
-    transform: translateZ(-50px) scale(0.9); /* Менша та далі */
+    transform: translateZ(-50px) scale(0.9);
 }
 
 #candle3 {
-    transform: translateZ(30px) scale(1.05); /* Трохи ближча */
+    transform: translateZ(30px) scale(1.05);
 }
 
 #candle4 {
-    transform: translateZ(-30px) scale(0.95); /* Трохи далі */
+    transform: translateZ(-30px) scale(0.95);
 }
 
 #candle5 {
-    transform: translateZ(60px) scale(1.2); /* Найближча */
+    transform: translateZ(60px) scale(1.2);
 }
 
 #candle6 {
 
-    transform: translateZ(-60px) scale(0.8); /* Найдальша */
+    transform: translateZ(-60px) scale(0.8);
 }
 
 #candle7 {
-    transform: translateZ(40px) scale(1.15); /* Досить близько */
+    transform: translateZ(40px) scale(1.15);
 }
 
 #candle8 {
 
-    transform: translateZ(-40px) translateY(30px) scale(0.85); /* Досить далеко */
+    transform: translateZ(-40px) translateY(30px) scale(0.85);
 }
 
 #candle9 {
-    transform: translateZ(20px) scale(1.1); /* Трохи ближче */
+    transform: translateZ(20px) scale(1.1);
 }
 
 #candle10 {
-    transform: translateZ(-20px) scale(0.9); /* Трохи далі */
+    transform: translateZ(-20px) scale(0.9);
 }
 
 #candle11 {
-    transform: translateZ(70px) scale(1.3); /* Дуже близько */
+    transform: translateZ(70px) scale(1.3);
 }
 
 #candle12 {
 
-    transform: translateZ(-70px) translateY(30px) scale(0.7); /* Дуже далеко */
+    transform: translateZ(-70px) translateY(30px) scale(0.7);
 }
 
 #candle13 {
-    transform: translateZ(10px) scale(1.05); /* Ледь ближче */
+    transform: translateZ(10px) scale(1.05);
 }
 
 #candle14 {
-    transform: translateZ(-10px) scale(0.95); /* Ледь далі */
+    transform: translateZ(-10px) scale(0.95);
 }
 
 #candle15 {
     height: 140px;
-    transform: translateZ(0px) translateY(-180px) scale(1.0); /* На середній відстані */
+    transform: translateZ(0px) translateY(-180px) scale(1.0);
 }
 
 #candle16 {
     height: 100px;
-    transform: translateZ(100px) translateY(-170px) scale(1.3); /* Піднята вгору та ближче  ++*/
+    transform: translateZ(100px) translateY(-170px) scale(1.3);
 }
 
 #candle17 {
     height: 70px;
-    transform: translateZ(-70px) translateY(-150px) scale(1.7); /* Піднята вгору та далеко найбільша */
+    transform: translateZ(-70px) translateY(-150px) scale(1.7);
 }
 
 #candle18 {
     height: 120px;
-    transform: translateZ(-50px) translateY(-170px) scale(1.05); /* Піднята вгору трохи ближче ++ */
+    transform: translateZ(-50px) translateY(-170px) scale(1.05);
 }
 
 #candle19 {
 
-    transform: translateZ(-100px) translateY(-160px) scale(0.95); /* Піднята вгору трохи далі +++ */
+    transform: translateZ(-100px) translateY(-160px) scale(0.95);
 }
 
 #candle20 {
     height: 120px;
-    transform: translateZ(-200px) translateY(-160px) scale(1.0); /* Піднята вгору на середній відстані ++ */
+    transform: translateZ(-200px) translateY(-160px) scale(1.0);
 }
-
 
 
 #candle-row {
     display: flex;
-    flex-wrap: wrap; /* Дозволяє розміщення елементів у кілька рядів */
-    justify-content: space-around; /* Розподіл свічок рівномірно */
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    perspective: 1000px; /* Створює 3D-ефект */
-    margin-bottom: -160px; /* або більше, залежно від потреб */
+    perspective: 1000px;
+    margin-bottom: -160px;
 }
 
 
+@media (max-width: 1100px) {
+    #candle11 {
+        transform: translateZ(-70px) translateY(-60px) translateX(240px) scale(1.3);
+    }
+
+    #candle13, #candle6, #candle14, #candle2, #candle16, #candle17, #candle18, #candle19, #candle20 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    #candle15 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #candle9, #candle7, #candle8, #candle10 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #candle9, #candle7, #candle8, #candle10 {
+        display: none;
+    }
+}
 
 
 

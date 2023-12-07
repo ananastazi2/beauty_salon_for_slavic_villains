@@ -4,18 +4,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Ensure the landing page takes up all the container height */
-    padding-top: 100px; /* Add padding to avoid overlapping the text */
+    height: 100%;
+    padding-top: 100px;
 }
 
-/*#background-img1 {*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    position: fixed; !* If you want the image to stay in place while scrolling *!*/
-/*    z-index: -1;*/
-/*    background: url('../../images/contacts/contacts.jpg') no-repeat center center;*/
-/*    background-size: cover;*/
-/*}*/
 
 #background-img1 {
     width: 100%;
@@ -29,44 +21,44 @@
 
 
 .header-text1 {
-    position: absolute; /* Absolute positioning relative to the parent */
-    top: 5%; /* Adjust as per the design */
-    left: 5%; /* Adjust as per the design */
+    position: absolute;
+    top: 5%;
+    left: 5%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align text to the left */
+    align-items: flex-start;
 }
 
 .pre-body1 {
     color: #E2DDE1;
-    font-size: 20px;
-    width: auto; /* Adjust width as necessary */
+    font-size: 24px;
+    width: auto;
+}
+
+.pre-body2 {
+    color: #E2DDE1;
+    font-size: 32px;
+    width: auto;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align children (h1 and button) to the start (left) */
+    align-items: flex-start;
 }
 
 .header-body1 {
     font-size: 62px;
-    margin: 0 0 20px 0; /* Add some bottom margin to space out the button */
-    /* Adjust the left and right margins if necessary */
-}
+    margin: 0 0 20px 0;
 
-/*.label {*/
-/*    margin-bottom: 1.5vh;*/
-/*    text-align: center;*/
-/*    font-size: 28px;*/
-/*}*/
+}
 
 
 .contacts-container {
 
     position: relative;
-    height: 120vh; /* Adjust height as necessary */
+    height: 120vh;
     background: url('../../images/contacts/contacts.jpg') no-repeat center center;
     background-size: cover;
 }
@@ -75,7 +67,7 @@
 .contact-form {
     width: 100%;
     max-width: 500px;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     box-sizing: border-box;
     position: relative;
@@ -83,79 +75,55 @@
     font-size: 24px;
 
 
-    /* Updated green glow effect with the new color */
-    box-shadow: 0 0 100px 5px rgba(1, 156, 124, 0.7); /* Glow effect using the color #019C7C */
+    box-shadow: 0 0 100px 5px rgba(1, 156, 124, 0.7);
 }
 
 .input-group {
-    margin-bottom: 1em; /* Space between input groups */
+    margin-bottom: 1em;
 }
 
-
-@media screen and (max-width: 1440px) {
-    /* Задайте поріг для медіа-запиту згідно з вашими потребами */
-    .contact-form {
-
-        margin-right: 20px;
-
-    }
-}
-
-@media (max-width: 685px) {
-    .contact-form {
-        width: 70%; /* Відсоткове значення для адаптивності */
-        font-size: 18px; /* Можна зменшити розмір шрифту для кращої адаптивності */
-    }
-}
-
-/*.input-group label {*/
-/*    display: block;*/
-/*    color: #fff; !* White color for the text *!*/
-/*    margin-bottom: .5em; !* Space between label and input field *!*/
-/*    font-size: 1em; !* Adjust the size as needed *!*/
-/*}*/
 
 .input-group input,
 .input-group textarea {
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #006432; /* Green color for the input bottom border */
-    color: #fff; /* White color for the input text */
+    border-bottom: 1px solid #006432;
+    color: #fff;
     padding: 10px 0;
-    font-size: 1em; /* Adjust the size as needed */
-    text-align: center; /* Centers the placeholder text */
-    height: 60px; /* Set the height to 40px */
+    font-size: 1em;
+    text-align: center;
+    height: 60px;
     box-sizing: border-box;
 }
 
-/* Style the placeholder text */
+
 ::placeholder {
-    color: #fff; /* White color for the placeholder text */
-    opacity: 1; /* Make sure the placeholder is fully visible */
+    color: #fff;
+    opacity: 1;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
     outline: none;
-    border-bottom: 1px solid #006432; /* Green color for the input bottom border when focused */
+    border-bottom: 1px solid #006432;
 }
 
-/* Adjust textarea to match input fields in height */
+
 .input-group textarea {
-    height: 60px; /* Same as the input fields */
-    padding: 10px 0; /* To match the input fields */
-    resize: none; /* Prevents resizing of textarea */
+    height: 60px;
+    padding: 10px 0;
+    resize: none;
 }
 
 
 .button-contact {
-    position: absolute; /* Position the button absolutely within its parent */
-    left: 50%; /* Center the button from the left side of the parent */
-    bottom: 20px; /* Distance from the bottom of the parent */
-    transform: translateX(-50%); /* Shift the button back to truly center it */
-    /* Add any other styling neces
-    sary for the button */
+    margin-top: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+
 }
 
 .button-contact {
@@ -172,8 +140,8 @@
     grid-row-start: 1;
     justify-self: start;
     color: white;
-    z-index: 1; /* це забезпечує, що текст буде над SVG */
-    position: relative; /* потрібно для коректної роботи z-index */
+    z-index: 1;
+    position: relative;
 }
 
 textarea {
@@ -181,7 +149,7 @@ textarea {
     font-family: 'ZCOOL XiaoWei', sans-serif;
     color: #FFF;
     text-shadow: 0px 4px 4px #000;
-    font-size: 36px; /* Adjust the size as needed */
+    font-size: 36px;
 }
 
 input {
@@ -189,16 +157,16 @@ input {
     font-family: 'ZCOOL XiaoWei', sans-serif;
     color: #FFF;
     text-shadow: 0px 4px 4px #000;
-    font-size: 36px; /* Adjust the size as needed */
+    font-size: 36px;
 }
 
-.background-right {
+.background-right2 {
     position: absolute;
     right: 3.5vw;
     top: 0;
-    height: 120vh; /* Set the height to be 100% of the viewport height */
-    width: auto; /* Adjust the width automatically to maintain the image's aspect ratio */
-    object-fit: cover; /* Ensure the image covers the set height fully without distortion */
+    height: 120vh;
+    width: auto;
+    object-fit: cover;
 }
 
 .to-contact {
@@ -208,8 +176,60 @@ input {
     display: grid;
     grid-template-columns: calc(245px + 3.6vw);
     align-items: center;
+    margin-bottom: -120px;
+    margin-left: 400px;
+
 }
 
+
+@media screen and (max-width: 1440px) {
+
+    .contact-form {
+
+        margin-right: 20px;
+
+    }
+
+    .to-contact {
+
+        margin-bottom: -120px;
+        margin-left: 40px;
+
+    }
+
+}
+
+@media (max-width: 885px) {
+    .to-contact {
+
+        margin-bottom: -120px;
+        margin-left: 40px;
+
+    }
+
+}
+
+
+@media (max-width: 685px) {
+    .contact-form {
+        width: 70%;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .to-contact {
+
+        margin-bottom: -120px;
+        margin-left: 10px;
+
+    }
+
+    .background-right2 {
+        display: none;
+    }
+}
 
 
 
