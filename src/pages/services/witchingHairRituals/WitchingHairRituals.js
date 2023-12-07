@@ -72,13 +72,13 @@ function WitchingHairRituals() {
 
           <section className='hair'>
             <div id='image-container1'>
-            <figure2>
+            <figure>
               <div id='image-container1'>
-                <img src={image1} id='image' class="custom-image"/>
+                <img src={image1} id='image' className="custom-image"/>
                 <div className='outline2'/>
               </div>
 
-            </figure2>
+            </figure>
             </div>
             <div className='right-section2'>
               <div className='description1'>
@@ -104,7 +104,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image2} id='image' class="custom-image"/>
+                    <img src={image2} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
@@ -128,7 +128,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image3} id='image' class="custom-image"/>
+                    <img src={image3} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
@@ -153,7 +153,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image4} id='image' class="custom-image"/>
+                    <img src={image4} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
@@ -178,7 +178,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image5} id='image' class="custom-image"/>
+                    <img src={image5} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
@@ -207,7 +207,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image6} id='image' class="custom-image"/>
+                    <img src={image6} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
@@ -231,7 +231,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image7} id='image' class="custom-image"/>
+                    <img src={image7} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
@@ -253,7 +253,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image8} id='image' class="custom-image"/>
+                    <img src={image8} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
@@ -277,7 +277,7 @@ function WitchingHairRituals() {
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
-                    <img src={image9} id='image' class="custom-image"/>
+                    <img src={image9} id='image' className="custom-image"/>
                     <div className='outline2'/>
                   </div>
 
