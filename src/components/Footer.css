@@ -21,11 +21,21 @@
     text-align: left;
 }
 
+#pages-nav a {
+    text-decoration: none;
+    color: white;
+}
+
 .social-networks {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr 1.5fr;
     gap: 20%;
+    cursor: pointer;
+}
+
+.arrow-up {
+    cursor: pointer;
 }
 
 @media (min-width: 1441px) {

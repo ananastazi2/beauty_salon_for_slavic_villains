@@ -13,7 +13,7 @@ import { routes } from "../../../consts/RouteConsts.js";
 
 function Services() {
   let currentWidth;
-  const tabletWidth = 800;
+  const tabletWidth = 768;
 
   const services = [
       {
@@ -49,7 +49,7 @@ function Services() {
   ];
 
   function getIndex(i) {
-    if (width < tabletWidth) {
+    if (width <= tabletWidth) {
       if (i % 3 === 1) 
         return i + 1;
       if (i % 3 === 2)
@@ -69,9 +69,11 @@ function Services() {
 
       <section className='all-services-section'>
         {services.map((el, i) => (
-            <Link to={el.pageLink}>
-              <figure className='service-item' key={i} style={{ order: getIndex(i) }}> 
-                <img className='picture' src={el.image} />
+            <Link to={el.pageLink} key={i} style={{ order: getIndex(i) }}>
+              <figure className='service-item'> 
+                <div className='picture'>
+                  <img src={el.image} />
+                </div>
                 <figcaption className='name'>
                   {el.caption}
                 </figcaption>

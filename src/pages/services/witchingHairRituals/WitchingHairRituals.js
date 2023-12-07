@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 import stripe
   from "../../../images/witchingHairRituals/etno/stripe.png";
 
@@ -15,11 +16,25 @@ import image9 from "../../../images/witchingHairRituals/image9.png";
 
 
 function WitchingHairRituals() {
-  const bubbleAmount = 70;
+  const minBubbles = 50;
+  const maxBubbles = 100;
+  let bubbleAmount = 70;
   const minBubbleValue = 10;
   const maxBubbleValue = 40;
   const randInRange = (min, max) => min + Math.random() * (max - min);
-  const randBubbleDelay = () => Math.random() % 5 + 's';
+  const randBubbleDelay = () => Math.random() % 10000;
+
+  const [bubbles, setBubbles] = useState([]);
+  useEffect(() => {
+    bubbleAmount = randInRange(minBubbles, maxBubbles);
+    bubbleAmount = 15;
+    [...Array(bubbleAmount)].map(
+      async (e, i) => {
+          await new Promise(r => setTimeout(r, randBubbleDelay));
+          let span = <span key={i} style={{ '--i': randInRange(minBubbleValue, maxBubbleValue), order: randInRange(0, bubbleAmount) }}  />
+          setBubbles(prev => [...prev, span]);
+    })
+  }, []);
 
   return (
       <>
@@ -43,16 +58,9 @@ function WitchingHairRituals() {
             </p>
           </div>
 
-
           <div className='anim'>
             <div className='bubble-effect'>
-              {[...Array(bubbleAmount)].map(
-                  (e, i) => 
-                  <span key={i} style={{ 
-                    '--i': randInRange(minBubbleValue, maxBubbleValue),
-                    'animationDelay': randBubbleDelay()
-                  }}  />
-              )}
+              {bubbles.map(el => el)}
             </div>
           </div>
 

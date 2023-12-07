@@ -87,6 +87,7 @@
     display: grid;
     grid-template-columns: calc(245px + 3.6vw);
     align-items: center;
+    cursor: pointer;
 }
 
 .to-services-label {

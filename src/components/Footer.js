@@ -1,8 +1,14 @@
 import React from 'react'
 import logo from '../images/logo.png'
 import './Footer.css'
+import { Link } from 'react-router-dom'
+import {useEffect} from 'react';
 
 function Footer() {
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+
   return (
     <footer className='footer'>
         <img src={logo} width='auto' id='footer-logo'/>
@@ -19,10 +25,10 @@ function Footer() {
         </p>
 
         <p id='pages-nav'>
-          Home <br />
-          Services <br />
-          Team <br />
-          Contacts <br />
+          <Link to='/'>Home</Link> <br />
+          <Link to='/services'>Services</Link> <br />
+          <Link to='/team'>Team</Link> <br />
+          <Link to='/contacts'>Contacts</Link> <br />
         </p>
 
         <div className='social-networks'>
@@ -44,7 +50,9 @@ function Footer() {
           </svg>
         </div>
 
-        <button className='button-clear-style arrow-up'>
+        <button className='button-clear-style arrow-up' onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}>
           <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
             <circle cx="28" cy="28" r="28" fill="#003F32" fillOpacity="0.35"/>
             <g filter="url(#filter0_d_27_403)">
