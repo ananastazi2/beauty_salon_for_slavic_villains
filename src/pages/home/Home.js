@@ -39,7 +39,7 @@ function Home() {
         </div>
 
         <main className='main-content'>
-            <h1 id='about-us-header'>Abou<span className='etno-letters'>t</span> us</h1>
+            <h1 className='page-header'>Abou<span className='etno-letters'>t</span> us</h1>
             <section className='about-us'>
                 <img src={etnoStripeBackground} className='etno-background-left' />
                 <figure>

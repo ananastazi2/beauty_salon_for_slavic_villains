@@ -26,8 +26,8 @@ function App() {
           /> {/* define the standard route */}
           <Route path={routes.services.base}>
             <Route index element={<Services />} />
-            <Route path={routes.services.all} element={<Services />} />
-            <Route path={routes.services.witchingHairRituals} element={<WitchingHairRituals />} />
+            <Route path={routes.services.base + routes.services.all} element={<Services />} />
+            <Route path={routes.services.base + routes.services.witchingHairRituals} element={<WitchingHairRituals />} />
           </Route> {/* define the services route */}
           <Route path={routes.team} element={<Team />} /> {/* define the team route */}
           <Route path={routes.contacts} element={<Contacts />} /> {/* define the contacts route */}

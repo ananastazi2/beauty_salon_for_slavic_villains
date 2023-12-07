@@ -3,7 +3,7 @@
     min-height: 92vh;
 }
 
-#about-us-header {
+.page-header {
     text-align: center;
     font-size: 51px;
     font-weight: normal;
@@ -112,7 +112,7 @@
         width: 84%;
     }
 
-    #about-us-header {
+    .page-header {
         margin-top: 4%;
     }
 
@@ -149,7 +149,7 @@
 }
 
 @media (max-width: 1024px) {
-    #about-us-header {
+    .page-header {
         font-size: 44px;
     }
 
@@ -187,7 +187,7 @@
 }
 
 @media (max-width: 768px) {
-    #about-us-header {
+    .page-header {
         font-size: 40px;
     }
 
@@ -209,7 +209,7 @@
 }
 
 @media (max-width: 690px) {
-    #about-us-header {
+    .page-header {
         font-size: 36px;
     }
 
