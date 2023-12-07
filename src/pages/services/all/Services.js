@@ -3,12 +3,12 @@ import './Services.css'
 import useWindowSize from '../../../components/WindowsSize.js'
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import witchingHairRituals from '../../../images/services/hair service.jpg'
-import skinCare from '../../../images/services/skin care.jpg'
-import pedicure from '../../../images/services/pedicure.jpg'
-import massage from '../../../images/services/massage.jpg'
+import witchingHairRituals from '../../../images/services/hair service.png'
+import skinCare from '../../../images/services/skin care.png'
+import pedicure from '../../../images/services/pedicure.png'
+import massage from '../../../images/services/massage.png'
 import makeup from '../../../images/services/makeup.png'
-import manicure from '../../../images/services/manicure.jpg'
+import manicure from '../../../images/services/manicure.png'
 import { routes } from "../../../consts/RouteConsts.js";
 
 function Services() {
@@ -37,12 +37,12 @@ function Services() {
         pageLink: ''
       },
       {
-        image: makeup,
+        image: manicure,
         caption: 'Forest Nymph Manicure',
         pageLink: ''
       },
       {
-        image: manicure,
+        image: makeup,
         caption: 'Mythical Creature Glamour',
         pageLink: ''
       }

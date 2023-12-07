@@ -9,3 +9,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.service-item .picture {
+    width: 20vw;
+    height: auto;
+}

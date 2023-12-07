@@ -2,10 +2,14 @@ html, body {
     min-width: 375px; /* This sets the minimum width of the page */
 }
 
-
 .main-content2 {
     position: relative;
     min-height: 92vh;
+}
+
+.etno-stripe2 {
+    overflow: hidden;
+    width: 100%;
 }
 
 #hair-header {
@@ -439,7 +443,7 @@ html, body {
     margin-bottom: 30px;
 }
 
-.bubble-effect span:nth-child(1) { --i: 11; }
+/* .bubble-effect span:nth-child(1) { --i: 11; }
 .bubble-effect span:nth-child(2) { --i: 12; }
 .bubble-effect span:nth-child(3) { --i: 24; }
 .bubble-effect span:nth-child(4) { --i: 10; }
@@ -518,7 +522,7 @@ html, body {
 .bubble-effect span:nth-child(77) { --i: 26; }
 .bubble-effect span:nth-child(78) { --i: 17; }
 .bubble-effect span:nth-child(79) { --i: 13; }
-.bubble-effect span:nth-child(80) { --i: 28; }
+.bubble-effect span:nth-child(80) { --i: 28; } */
 
 
 .anim {
@@ -534,6 +538,7 @@ html, body {
 .bubble-effect {
     position: relative;
     display:flex;
+    justify-content: space-between;
 }
 
 /*.bubble-effect span {*/
@@ -588,7 +593,6 @@ html, body {
 
 
 @keyframes animate {
-
     0%
     {
         transform: translateY(100vh) scale(0);

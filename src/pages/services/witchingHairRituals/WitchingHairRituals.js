@@ -15,6 +15,11 @@ import image9 from "../../../images/witchingHairRituals/image9.png";
 
 
 function WitchingHairRituals() {
+  const bubbleAmount = 70;
+  const minBubbleValue = 10;
+  const maxBubbleValue = 40;
+  const randInRange = (min, max) => min + Math.random() * (max - min);
+  const randBubbleDelay = () => Math.random() % 5 + 's';
 
   return (
       <>
@@ -41,130 +46,13 @@ function WitchingHairRituals() {
 
           <div className='anim'>
             <div className='bubble-effect'>
-
-
-              <span style={{ '--i': 11 }}></span>
-              <span style={{ '--i': 12 }}></span>
-              <span style={{ '--i': 24 }}></span>
-              <span style={{ '--i': 10 }}></span>
-              <span style={{ '--i': 14 }}></span>
-              <span style={{ '--i': 23 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 16 }}></span>
-              <span style={{ '--i': 19 }}></span>
-              <span style={{ '--i': 20 }}></span>
-              <span style={{ '--i': 22 }}></span>
-              <span style={{ '--i': 25 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 21 }}></span>
-              <span style={{ '--i': 15 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 26 }}></span>
-              <span style={{ '--i': 17 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 28 }}></span>
-              <span style={{ '--i': 11 }}></span>
-              <span style={{ '--i': 12 }}></span>
-              <span style={{ '--i': 24 }}></span>
-              <span style={{ '--i': 10 }}></span>
-              <span style={{ '--i': 14 }}></span>
-              <span style={{ '--i': 23 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 16 }}></span>
-              <span style={{ '--i': 19 }}></span>
-              <span style={{ '--i': 20 }}></span>
-              <span style={{ '--i': 22 }}></span>
-              <span style={{ '--i': 25 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 21 }}></span>
-              <span style={{ '--i': 15 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 26 }}></span>
-              <span style={{ '--i': 17 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 28 }}></span>
-              <span style={{ '--i': 11 }}></span>
-              <span style={{ '--i': 12 }}></span>
-              <span style={{ '--i': 24 }}></span>
-              <span style={{ '--i': 10 }}></span>
-              <span style={{ '--i': 14 }}></span>
-              <span style={{ '--i': 23 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 16 }}></span>
-              <span style={{ '--i': 19 }}></span>
-              <span style={{ '--i': 20 }}></span>
-              <span style={{ '--i': 22 }}></span>
-              <span style={{ '--i': 25 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 21 }}></span>
-              <span style={{ '--i': 15 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 26 }}></span>
-              <span style={{ '--i': 17 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 28 }}></span>
-              <span style={{ '--i': 11 }}></span>
-              <span style={{ '--i': 12 }}></span>
-              <span style={{ '--i': 24 }}></span>
-              <span style={{ '--i': 10 }}></span>
-              <span style={{ '--i': 14 }}></span>
-              <span style={{ '--i': 23 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 16 }}></span>
-              <span style={{ '--i': 19 }}></span>
-              <span style={{ '--i': 20 }}></span>
-              <span style={{ '--i': 22 }}></span>
-              <span style={{ '--i': 25 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 21 }}></span>
-              <span style={{ '--i': 15 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 26 }}></span>
-              <span style={{ '--i': 17 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 28 }}></span>
-              <span style={{ '--i': 11 }}></span>
-              <span style={{ '--i': 12 }}></span>
-              <span style={{ '--i': 24 }}></span>
-              <span style={{ '--i': 10 }}></span>
-              <span style={{ '--i': 14 }}></span>
-              <span style={{ '--i': 23 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 16 }}></span>
-              <span style={{ '--i': 19 }}></span>
-              <span style={{ '--i': 20 }}></span>
-              <span style={{ '--i': 22 }}></span>
-              <span style={{ '--i': 25 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 21 }}></span>
-              <span style={{ '--i': 15 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 26 }}></span>
-              <span style={{ '--i': 17 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 28 }}></span>
-              <span style={{ '--i': 11 }}></span>
-              <span style={{ '--i': 12 }}></span>
-              <span style={{ '--i': 24 }}></span>
-              <span style={{ '--i': 10 }}></span>
-              <span style={{ '--i': 14 }}></span>
-              <span style={{ '--i': 23 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 16 }}></span>
-              <span style={{ '--i': 19 }}></span>
-              <span style={{ '--i': 20 }}></span>
-              <span style={{ '--i': 22 }}></span>
-              <span style={{ '--i': 25 }}></span>
-              <span style={{ '--i': 18 }}></span>
-              <span style={{ '--i': 21 }}></span>
-              <span style={{ '--i': 15 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 26 }}></span>
-              <span style={{ '--i': 17 }}></span>
-              <span style={{ '--i': 13 }}></span>
-              <span style={{ '--i': 28 }}></span>
-
-
+              {[...Array(bubbleAmount)].map(
+                  (e, i) => 
+                  <span key={i} style={{ 
+                    '--i': randInRange(minBubbleValue, maxBubbleValue),
+                    'animationDelay': randBubbleDelay()
+                  }}  />
+              )}
             </div>
           </div>
 
