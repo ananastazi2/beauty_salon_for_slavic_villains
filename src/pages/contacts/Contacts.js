@@ -2,6 +2,7 @@ import React from 'react';
 import './Contacts.css';
 import stripe from "../../images/etnoSymbolsDetails/about_us_background_stripe_FernFlower.png";
 import  { useState } from 'react';
+import { useEffect } from 'react';
 
 
 function Contacts() {
@@ -19,6 +20,11 @@ function Contacts() {
             setIsFormValid(false);
         }
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
         <div className='contacts-container'>
             <div id='background-img1'></div>

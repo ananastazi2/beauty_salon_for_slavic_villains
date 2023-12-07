@@ -9,6 +9,8 @@ function Header() {
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
+
+    document.body.style.overflow = showNavbar ? 'auto' : 'hidden'
   }
   
   return (

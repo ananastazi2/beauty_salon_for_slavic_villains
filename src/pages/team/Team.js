@@ -8,9 +8,14 @@ import image4t from "../../images/team/image4t.jpg";
 import image5t from "../../images/team/image5t.jpg";
 import image6t from "../../images/team/image6t.png";
 import stripe from "../../images/witchingHairRituals/etno/stripe.png";
+import { useEffect } from 'react';
 
 
 function Team() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+      
     return (
         <div className="sections-container-team">
 

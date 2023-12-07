@@ -63,6 +63,10 @@ function Services() {
     currentWidth = width;
   }, [width]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <main>
       <h1 className='page-header services-header'>Our serv<span className='etno-letters'>i</span>ces</h1>

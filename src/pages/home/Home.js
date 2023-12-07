@@ -4,9 +4,21 @@ import './Home-main.css'
 import ownerImage from '../../images/Baba_Yaga.jpg'
 import etnoStripeBackground from '../../images/etnoSymbolsDetails/about_us_background_stripe_FernFlower.png'
 import { useNavigate } from "react-router-dom";
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 function Home() {
     const navigate = useNavigate();
+
+    const aboutUs = useRef(null);
+
+    const scrollDown = () => {
+        aboutUs?.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <>
@@ -17,7 +29,7 @@ function Home() {
                         <br></br>
                         <span className='header-body'>A place where every shade of beauty is felt in the dark</span>
                     </p>
-                    <button className='button-clear-style scroll-down'>
+                    <button className='button-clear-style scroll-down' onClick={scrollDown}>
                         <span className='label'>SEE THE ROOTS</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="39" viewBox="0 0 41 39" fill="none" id='arrow-down'>
                             <g filter="url(#filter0_d_17_37)">
@@ -41,7 +53,7 @@ function Home() {
                 </header>
             </div>
 
-            <main className='main-content'>
+            <main className='main-content' ref={aboutUs}>
                 <h1 className='page-header'>Abou<span className='etno-letters'>t</span> us</h1>
                 <section className='about-us'>
                     <img src={etnoStripeBackground} className='etno-background-left' />

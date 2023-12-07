@@ -38,6 +38,12 @@
     cursor: pointer;
 }
 
+.arrow-up:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(1, 156, 125, 0.7));
+    opacity: 1;
+    transition: 0.5s;
+}
+
 @media (min-width: 1441px) {
     .footer {
         gap: 8vw;

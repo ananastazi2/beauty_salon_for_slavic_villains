@@ -297,6 +297,6 @@
     }
 
     .to-services {
-        margin-left: calc(100% - 245px - 11vw);
+        margin-left: calc(100% - 245px - 20vw);
     }
 }
