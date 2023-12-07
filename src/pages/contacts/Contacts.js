@@ -28,7 +28,7 @@ function Contacts() {
               </div>
             </form>
           </div>
-          <button className='button-clear-style to-contact'>
+          <button className='button-clear-style2 to-contact'>
             <span className='to-contact-label'>SEND A MESSAGE</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="225" height="57" viewBox="0 0 225 57" fill="none" id='to-services-background'>
               <g filter="url(#filter0_d_26_336)">

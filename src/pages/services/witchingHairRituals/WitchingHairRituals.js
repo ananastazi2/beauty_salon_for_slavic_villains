@@ -15,9 +15,13 @@ import image9 from "../../../images/witchingHairRituals/image9.png";
 
 
 function WitchingHairRituals() {
+
   return (
       <>
         <main className='main-content2'>
+
+
+
           <div className="header-with-background2">
             <h1 id='hair-header'>Witching Hair Rituals</h1>
 
@@ -35,10 +39,137 @@ function WitchingHairRituals() {
           </div>
 
 
+          <div className='anim'>
+            <div className='bubble-effect'>
 
+
+              <span style={{ '--i': 11 }}></span>
+              <span style={{ '--i': 12 }}></span>
+              <span style={{ '--i': 24 }}></span>
+              <span style={{ '--i': 10 }}></span>
+              <span style={{ '--i': 14 }}></span>
+              <span style={{ '--i': 23 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 16 }}></span>
+              <span style={{ '--i': 19 }}></span>
+              <span style={{ '--i': 20 }}></span>
+              <span style={{ '--i': 22 }}></span>
+              <span style={{ '--i': 25 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 21 }}></span>
+              <span style={{ '--i': 15 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 26 }}></span>
+              <span style={{ '--i': 17 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 28 }}></span>
+              <span style={{ '--i': 11 }}></span>
+              <span style={{ '--i': 12 }}></span>
+              <span style={{ '--i': 24 }}></span>
+              <span style={{ '--i': 10 }}></span>
+              <span style={{ '--i': 14 }}></span>
+              <span style={{ '--i': 23 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 16 }}></span>
+              <span style={{ '--i': 19 }}></span>
+              <span style={{ '--i': 20 }}></span>
+              <span style={{ '--i': 22 }}></span>
+              <span style={{ '--i': 25 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 21 }}></span>
+              <span style={{ '--i': 15 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 26 }}></span>
+              <span style={{ '--i': 17 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 28 }}></span>
+              <span style={{ '--i': 11 }}></span>
+              <span style={{ '--i': 12 }}></span>
+              <span style={{ '--i': 24 }}></span>
+              <span style={{ '--i': 10 }}></span>
+              <span style={{ '--i': 14 }}></span>
+              <span style={{ '--i': 23 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 16 }}></span>
+              <span style={{ '--i': 19 }}></span>
+              <span style={{ '--i': 20 }}></span>
+              <span style={{ '--i': 22 }}></span>
+              <span style={{ '--i': 25 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 21 }}></span>
+              <span style={{ '--i': 15 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 26 }}></span>
+              <span style={{ '--i': 17 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 28 }}></span>
+              <span style={{ '--i': 11 }}></span>
+              <span style={{ '--i': 12 }}></span>
+              <span style={{ '--i': 24 }}></span>
+              <span style={{ '--i': 10 }}></span>
+              <span style={{ '--i': 14 }}></span>
+              <span style={{ '--i': 23 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 16 }}></span>
+              <span style={{ '--i': 19 }}></span>
+              <span style={{ '--i': 20 }}></span>
+              <span style={{ '--i': 22 }}></span>
+              <span style={{ '--i': 25 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 21 }}></span>
+              <span style={{ '--i': 15 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 26 }}></span>
+              <span style={{ '--i': 17 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 28 }}></span>
+              <span style={{ '--i': 11 }}></span>
+              <span style={{ '--i': 12 }}></span>
+              <span style={{ '--i': 24 }}></span>
+              <span style={{ '--i': 10 }}></span>
+              <span style={{ '--i': 14 }}></span>
+              <span style={{ '--i': 23 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 16 }}></span>
+              <span style={{ '--i': 19 }}></span>
+              <span style={{ '--i': 20 }}></span>
+              <span style={{ '--i': 22 }}></span>
+              <span style={{ '--i': 25 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 21 }}></span>
+              <span style={{ '--i': 15 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 26 }}></span>
+              <span style={{ '--i': 17 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 28 }}></span>
+              <span style={{ '--i': 11 }}></span>
+              <span style={{ '--i': 12 }}></span>
+              <span style={{ '--i': 24 }}></span>
+              <span style={{ '--i': 10 }}></span>
+              <span style={{ '--i': 14 }}></span>
+              <span style={{ '--i': 23 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 16 }}></span>
+              <span style={{ '--i': 19 }}></span>
+              <span style={{ '--i': 20 }}></span>
+              <span style={{ '--i': 22 }}></span>
+              <span style={{ '--i': 25 }}></span>
+              <span style={{ '--i': 18 }}></span>
+              <span style={{ '--i': 21 }}></span>
+              <span style={{ '--i': 15 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 26 }}></span>
+              <span style={{ '--i': 17 }}></span>
+              <span style={{ '--i': 13 }}></span>
+              <span style={{ '--i': 28 }}></span>
+
+
+            </div>
+          </div>
 
           <div className="header-with-background2">
-            <h2 id='about-us-header'>Rusalka's Witching Hair Rituals</h2>
+            <h2 id='hair-header2'>Rusalka's Witching Hair Rituals</h2>
 
           </div>
 
@@ -73,7 +204,7 @@ function WitchingHairRituals() {
 
 
             <section className='what-to-expect'>
-              <h2 id='about-us-header'>What to Expect:</h2>
+              <h2 id='hair-header2'>What to Expect:</h2>
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
@@ -176,7 +307,7 @@ function WitchingHairRituals() {
             </section>
 
             <section className='benefits'>
-              <h2 id='about-us-header'>Benefits of the Ritual:</h2>
+              <h2 id='hair-header2'>Benefits of the Ritual:</h2>
               <div className="image-text-container">
                 <figure>
                   <div id='image-container2'>
@@ -287,7 +418,7 @@ function WitchingHairRituals() {
           <img src={stripe} className='etno-stripe2' alt="Decorative Stripe"/>
 
           <div className="header-with-background2">
-            <h2 id='about-us-header'>Price List</h2>
+            <h2 id='hair-header2'>Price List</h2>
 
           </div>
 

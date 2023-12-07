@@ -12,12 +12,18 @@ html, body {
     text-align: center;
     font-size: 51px;
     font-weight: normal;
-    margin-top: 5%;
+    margin-top: 20px;
 
 
 }
 
+#hair-header2 {
+    text-align: center;
+    font-size: 51px;
+    font-weight: normal;
+    margin-top: 10px;
 
+}
 
 .etno-letters2 {
     font-family: 'Galaktika';
@@ -33,7 +39,8 @@ html, body {
 
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
+@media (max-width: 768px) {
+    /* Adjust breakpoint as needed */
     .hair {
         flex-direction: column; /* Stack image and text on top of each other */
     }
@@ -42,7 +49,6 @@ html, body {
     /*    margin-top: 20px; !* Provide more space above *!*/
     /*    margin-bottom: 20px; !* Provide more space below *!*/
     /*}*/
-
     .image-container1 {
         width: 100%; /* При необхідності налаштуйте ширину */
         display: flex;
@@ -55,13 +61,6 @@ html, body {
     width: 250px;
     height: 200px;
 }
-
-/*.etno-stripe2 {*/
-/*    width: 100%; !* Make the image width responsive to the container width *!*/
-/*    height: auto; !* Maintain the aspect ratio of the image *!*/
-/*    object-fit: cover; !* This will crop the image as the container resizes *!*/
-/*}*/
-
 
 
 .outline2 {
@@ -103,6 +102,7 @@ html, body {
     margin-bottom: 40px;
 
 }
+
 .description1 {
     display: flex;
     justify-content: center;
@@ -133,49 +133,10 @@ html, body {
     margin-right: 5%;
 }
 
-/*!* Updated CSS *!*/
-/*.etno-background-left {*/
-/*    position: absolute;*/
-/*    left: 3.5vw;*/
-/*    bottom: 0px;*/
-/*}*/
-
-/*.etno-background-under-header {*/
-/*    display: block;*/
-/*    width: 100%; !* Adjust as necessary for your layout *!*/
-/*    margin-top: 20px; !* Space above the image *!*/
-/*    margin-bottom: 20px; !* Space below the image *!*/
-/*}*/
-
-
-/*.to-services {*/
-/*    padding: 0;*/
-/*    padding-top: 3px;*/
-/*    align-self: flex-end;*/
-/*    display: grid;*/
-/*    grid-template-columns: calc(245px + 3.6vw);*/
-/*    align-items: center;*/
-/*}*/
-
-/*.to-services-label {*/
-/*    font-size: 24px;*/
-/*    grid-column-start: 1;*/
-/*    grid-row-start: 1;*/
-/*    justify-self: start;*/
-/*}*/
-
-/*#to-services-background {*/
-/*    grid-column-start: 1;*/
-/*    grid-row-start: 1;*/
-/*    justify-self: end;*/
-/*}*/
-
 .right-section2 {
     display: flex;
     flex-direction: column;
 }
-
-
 
 
 .image-text-container {
@@ -187,7 +148,6 @@ html, body {
 
 
 }
-
 
 
 /*.sections-container {*/
@@ -241,12 +201,8 @@ html, body {
 }
 
 
-
-
-
-
 /* Media query for screen sizes smaller than 768px */
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px) {
     .image-text-container {
         /* Stacking image and text vertically */
         flex-direction: column; /* Aligns items in a column */
@@ -265,10 +221,7 @@ html, body {
     }
 
 
-
 }
-
-
 
 
 /*.what-to-expect {*/
@@ -298,8 +251,12 @@ html, body {
     top: 0; /* Align the top edge of the image with the container */
     left: 0; /* Align the left edge of the image with the container */
     box-shadow: -11px -11px 8px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
+#image:hover {
+    box-shadow: 0 0 100px 5px rgba(1, 156, 124, 0.7); /* Green glow effect on hover */
+}
 
 .outline2 {
     position: absolute;
@@ -351,7 +308,6 @@ html, body {
 }
 
 
-
 /*.benefits {*/
 /*    display: flex;*/
 /*    flex-direction: row;*/
@@ -359,7 +315,6 @@ html, body {
 /*    width: 80vw;*/
 /*    margin: auto;*/
 /*}*/
-
 
 
 .benefits figure2 {
@@ -392,7 +347,6 @@ html, body {
 }
 
 
-
 .header-with-background2 {
     display: flex;
     justify-content: space-around;
@@ -409,10 +363,6 @@ html, body {
 .header-with-background2 h2:not(:last-child) {
     margin-right: 10px; /* Додаємо відступ справа до першого заголовка */
 }
-
-
-
-
 
 
 .container {
@@ -448,9 +398,8 @@ html, body {
 /* Додайте будь-які додаткові стилі, які ви хочете використати для красивого оформлення */
 
 
-
-
-@media (max-width: 768px) { /* Adjust the max-width as needed for your specific breakpoint */
+@media (max-width: 768px) {
+    /* Adjust the max-width as needed for your specific breakpoint */
     .description2 p {
         width: 100%; /* Adjust this width until the text breaks as desired */
         margin: 0 auto; /* This centers the paragraph if the container is wider than the paragraph */
@@ -461,14 +410,192 @@ html, body {
 /* Media query for screens smaller than 425px */
 @media screen and (max-width: 425px) {
     .text-description {
-        padding: 0 10px; /* Adds padding of 10px to left and right */
+        padding: 10%; /* Adds padding of 10px to left and right */
     }
 }
 
+@media screen and (max-width: 900px) {
+    /* Задайте поріг для медіа-запиту згідно з вашими потребами */
+    .container {
+        flex-direction: column; /* На малих екранах блоки будуть розташовуватися один під іншим */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* Задайте поріг для медіа-запиту згідно з вашими потребами */
+    .price-description li {
+        width: 100%; /* Adjust this width until the text breaks as desired */
+        margin: 0 auto;
+    }
+
+    .description2 {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+.description2 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.bubble-effect span:nth-child(1) { --i: 11; }
+.bubble-effect span:nth-child(2) { --i: 12; }
+.bubble-effect span:nth-child(3) { --i: 24; }
+.bubble-effect span:nth-child(4) { --i: 10; }
+.bubble-effect span:nth-child(5) { --i: 14; }
+.bubble-effect span:nth-child(6) { --i: 23; }
+.bubble-effect span:nth-child(7) { --i: 18; }
+.bubble-effect span:nth-child(8) { --i: 16; }
+.bubble-effect span:nth-child(9) { --i: 19; }
+.bubble-effect span:nth-child(10) { --i: 20; }
+.bubble-effect span:nth-child(11) { --i: 22; }
+.bubble-effect span:nth-child(12) { --i: 25; }
+.bubble-effect span:nth-child(13) { --i: 18; }
+.bubble-effect span:nth-child(14) { --i: 21; }
+.bubble-effect span:nth-child(15) { --i: 15; }
+.bubble-effect span:nth-child(16) { --i: 13; }
+.bubble-effect span:nth-child(17) { --i: 26; }
+.bubble-effect span:nth-child(18) { --i: 17; }
+.bubble-effect span:nth-child(19) { --i: 13; }
+.bubble-effect span:nth-child(20) { --i: 28; }
+.bubble-effect span:nth-child(21) { --i: 11; }
+.bubble-effect span:nth-child(22) { --i: 12; }
+.bubble-effect span:nth-child(23) { --i: 24; }
+.bubble-effect span:nth-child(24) { --i: 10; }
+.bubble-effect span:nth-child(25) { --i: 14; }
+.bubble-effect span:nth-child(26) { --i: 23; }
+.bubble-effect span:nth-child(27) { --i: 18; }
+.bubble-effect span:nth-child(28) { --i: 16; }
+.bubble-effect span:nth-child(29) { --i: 19; }
+.bubble-effect span:nth-child(30) { --i: 20; }
+.bubble-effect span:nth-child(31) { --i: 22; }
+.bubble-effect span:nth-child(32) { --i: 25; }
+.bubble-effect span:nth-child(33) { --i: 18; }
+.bubble-effect span:nth-child(34) { --i: 21; }
+.bubble-effect span:nth-child(35) { --i: 15; }
+.bubble-effect span:nth-child(36) { --i: 13; }
+.bubble-effect span:nth-child(37) { --i: 26; }
+.bubble-effect span:nth-child(38) { --i: 17; }
+.bubble-effect span:nth-child(39) { --i: 13; }
+.bubble-effect span:nth-child(40) { --i: 28; }
+.bubble-effect span:nth-child(41) { --i: 11; }
+.bubble-effect span:nth-child(42) { --i: 12; }
+.bubble-effect span:nth-child(43) { --i: 24; }
+.bubble-effect span:nth-child(44) { --i: 10; }
+.bubble-effect span:nth-child(45) { --i: 14; }
+.bubble-effect span:nth-child(46) { --i: 23; }
+.bubble-effect span:nth-child(47) { --i: 18; }
+.bubble-effect span:nth-child(48) { --i: 16; }
+.bubble-effect span:nth-child(49) { --i: 19; }
+.bubble-effect span:nth-child(50) { --i: 20; }
+.bubble-effect span:nth-child(51) { --i: 22; }
+.bubble-effect span:nth-child(52) { --i: 25; }
+.bubble-effect span:nth-child(53) { --i: 18; }
+.bubble-effect span:nth-child(54) { --i: 21; }
+.bubble-effect span:nth-child(55) { --i: 15; }
+.bubble-effect span:nth-child(56) { --i: 13; }
+.bubble-effect span:nth-child(57) { --i: 26; }
+.bubble-effect span:nth-child(58) { --i: 17; }
+.bubble-effect span:nth-child(59) { --i: 13; }
+.bubble-effect span:nth-child(60) { --i: 28; }
+.bubble-effect span:nth-child(61) { --i: 11; }
+.bubble-effect span:nth-child(62) { --i: 12; }
+.bubble-effect span:nth-child(63) { --i: 24; }
+.bubble-effect span:nth-child(64) { --i: 10; }
+.bubble-effect span:nth-child(65) { --i: 14; }
+.bubble-effect span:nth-child(66) { --i: 23; }
+.bubble-effect span:nth-child(67) { --i: 18; }
+.bubble-effect span:nth-child(68) { --i: 16; }
+.bubble-effect span:nth-child(69) { --i: 19; }
+.bubble-effect span:nth-child(70) { --i: 20; }
+.bubble-effect span:nth-child(71) { --i: 22; }
+.bubble-effect span:nth-child(72) { --i: 25; }
+.bubble-effect span:nth-child(73) { --i: 18; }
+.bubble-effect span:nth-child(74) { --i: 21; }
+.bubble-effect span:nth-child(75) { --i: 15; }
+.bubble-effect span:nth-child(76) { --i: 13; }
+.bubble-effect span:nth-child(77) { --i: 26; }
+.bubble-effect span:nth-child(78) { --i: 17; }
+.bubble-effect span:nth-child(79) { --i: 13; }
+.bubble-effect span:nth-child(80) { --i: 28; }
+
+
+.anim {
+    position: fixed; /* Змінено з relative на fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.bubble-effect {
+    position: relative;
+    display:flex;
+}
+
+/*.bubble-effect span {*/
+/*    position: relative;*/
+/*    width: 10px; !* Зменшено удвічі з 20px *!*/
+/*    height: 10px; !* Зменшено удвічі з 20px *!*/
+
+/*    margin: 0 2px; !* Зменшено відступи, оскільки кульки менші *!*/
+/*    border-radius: 50%;*/
+/*    background: #9ACD32; !* Змінено на приглушений зелений колір *!*/
+/*    box-shadow:*/
+/*            0 0 0 5px #9ACD3244, !* Полупрозорий приглушений зелений *!*/
+/*            0 0 15px #9ACD32,  !* Світлий приглушений зелений *!*/
+/*            0 0 30px #9ACD32;  !* Зменшено розмір темної тіні *!*/
+/*    animation: animate 15s linear infinite;*/
+/*    animation-duration: calc(125s / var(--i));*/
+/*}*/
+
+/*.bubble-effect span:nth-child(even) {*/
+/*    background: #87CEEB; !* Змінено на приглушений блакитний колір *!*/
+/*    box-shadow:*/
+/*            0 0 0 5px #87CEEB44, !* Полупрозорий приглушений блакитний *!*/
+/*            0 0 15px #87CEEB, !* Світлий приглушений блакитний *!*/
+/*            0 0 30px #87CEEB; !* Зменшено розмір темної тіні *!*/
+/*}*/
 
 
 
+.bubble-effect span {
+    position: relative;
+    width: 10px; /* Зменшено удвічі з 20px */
+    height: 10px; /* Зменшено удвічі з 20px */
+
+    margin: 0 2px; /* Зменшено відступи, оскільки кульки менші */
+    border-radius: 50%;
+    background: rgba(154, 205, 50, 0.5); /* Приглушений зелений з зниженою прозорістю */
+    box-shadow:
+            0 0 0 5px rgba(154, 205, 50, 0.22), /* Більш прозорий */
+            0 0 15px rgba(154, 205, 50, 0.5), /* Прозорий */
+            0 0 30px rgba(154, 205, 50, 0.3);  /* Зменшено розмір темної тіні */
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubble-effect span:nth-child(even) {
+    background: rgba(135, 206, 235, 0.5); /* Приглушений блакитний з зниженою прозорістю */
+    box-shadow:
+            0 0 0 5px rgba(135, 206, 235, 0.22), /* Більш прозорий */
+            0 0 15px rgba(135, 206, 235, 0.5), /* Прозорий */
+            0 0 30px rgba(135, 206, 235, 0.3); /* Зменшено розмір темної тіні */
+}
 
 
+@keyframes animate {
 
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
 
