@@ -18,6 +18,7 @@ function Team() {
             <section className='first-column'>
 
 
+
                 <div className="image-text-container-team">
                     <figure>
                         <div id='image-container-team'>
@@ -154,6 +155,111 @@ function Team() {
             </section>
 
             <img src={stripe} className='etno-stripe-team' alt="Decorative Stripe"/>
+
+            <div id="candle-row">
+                <div className="candle" id="candle1">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle2">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle3">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle4">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle5">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle6">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle7">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle8">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle9">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle10">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle11">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle12">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle13">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle14">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle15">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle16">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle17">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle18">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle19">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+                <div className="candle" id="candle20">
+                    <span className="glow"></span>
+                    <span className="flames"></span>
+                    <span className="thread"></span>
+                </div>
+            </div>
+
+
         </div>
     )
 }

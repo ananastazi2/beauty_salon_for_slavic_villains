@@ -10,6 +10,7 @@
     background: #00080A;
     font-family: 'Zen Kaku Gothic Antique';
     font-size: 20px;
+    z-index: 100;
 }
 
 .footer p {

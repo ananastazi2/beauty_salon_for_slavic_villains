@@ -10,8 +10,6 @@ html, body {
 }
 
 
-
-
 .hair figure2 {
     display: flex;
     flex-direction: column;
@@ -31,9 +29,6 @@ html, body {
     font-size: 24px;
     font-weight: 400;
 }
-
-
-
 
 
 .description1 {
@@ -106,8 +101,6 @@ html, body {
 }
 
 
-
-
 .first-column figure2 {
     display: flex;
     flex-direction: column;
@@ -119,9 +112,6 @@ html, body {
     font-size: 22px;
     margin-top: 6%;
 }
-
-
-
 
 
 .first-section-team {
@@ -160,22 +150,6 @@ html, body {
 }
 
 
-
-
-
-
-#image-team {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: -11px -11px 8px 0px rgba(0, 0, 0, 0.25);
-
-}
-
-
-
 .etno-stripe-team {
     width: 100%; /* Make the image width responsive to the container width */
     height: auto; /* Maintain the aspect ratio of the image */
@@ -205,6 +179,7 @@ html, body {
     text-align: center;
     font-family: 'ZCOOL XiaoWei', sans-serif;
 }
+
 .text-description-team p {
     margin-top: 0;
     text-align: justify;
@@ -257,16 +232,17 @@ html, body {
         margin: 10px; /* Adjust margins as needed */
         justify-content: center; /* Center items */
     }
+
     .image-text-container-team {
         justify-content: space-around; /* Adjust spacing for smaller screens */
         margin-left: 4px;
     }
+
     .sections-container-team {
         justify-content: space-around; /* Adjust spacing for smaller screens */
         margin-left: 1px;
     }
 }
-
 
 
 /* Additional adjustments for smaller screens */
@@ -275,15 +251,245 @@ html, body {
         justify-content: space-around; /* Adjust spacing for smaller screens */
         margin-left: 1px;
     }
+
     .sections-container-team section {
         flex-basis: 100%; /* Full width for very small screens */
         /* Adjust vertical margin, remove horizontal margin */
         justify-content: center;
 
     }
+
     .image-text-container-team {
         justify-content: space-around; /* Adjust spacing for smaller screens */
         margin-left: 4px;
     }
 
 }
+
+
+#image-team {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: -11px -11px 8px 0px rgba(0, 0, 0, 0.25);
+
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+}
+
+#image-team:hover {
+    box-shadow: 0 0 100px 5px rgba(1, 156, 124, 0.7); /* Green glow effect on hover */
+}
+
+.candle{
+    width: 15em;
+    height: 30em;
+    font-size: 7px;
+    background: linear-gradient(
+            #006432, /* Замінено на непрозорий варіант */
+            #006432, /* Замінено на непрозорий варіант */
+            #006432,
+            #006432 20%,
+            rgb(0,0,0) /* Замінено на непрозорий варіант */
+    );
+    box-shadow: inset 2em -3em 5em rgba(0, 0, 0, 0.4),
+                inset -2em 0 54em rgba(0, 0, 0, 0.4);
+    border-radius: 10em / 4em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10em;
+}
+.candle::before{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 5em;
+    border: 0.2em solid rgba(1, 156, 124, 0.7);
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: linear-gradient(
+            #444,
+            rgba(1, 156, 124, 0.7),
+            #006432,
+            #006432,
+            rgba(1, 156, 124, 0.7)
+    );
+    filter: opacity(0.7);
+}
+.thread{
+    position: absolute;
+    width: 0.6em;
+    height: 3.6em;
+    top: -1.8em;
+    background: linear-gradient(
+            #111,
+            black,
+            rgba(1, 156, 124, 0.7) 90%
+    );
+    border-radius: 40% 40% 0 0;
+}
+.flames{
+    position: absolute;
+    width: 2.4em;
+}
+.flames::before{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 6em;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: -4em;
+    border-radius: 50% 50% 35% 35%;
+    border: 0.2em solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    filter: opacity(0.7);
+}
+.flames::after{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 12em;
+    top: -12em;
+    background: linear-gradient(white 80%, transparent);
+    border-radius: 50% 50% 20% 20%;
+    box-shadow: 0 -0.6em 0.4em rgba(1, 156, 124, 0.7);
+    animation: enlarge 5s linear infinite,
+    move 6s linear infinite;
+}
+@keyframes move{
+    0%, 100%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+}
+@keyframes enlarge{
+    0%, 100%{
+        height: 12em;
+        top: -12em;
+    }
+    50%{
+        height: 14em;
+        top: -13em;
+    }
+}
+.glow{
+    position: absolute;
+    width: 10em;
+    height: 18em;
+    background-color: rgba(1, 156, 124, 0.7);
+    border-radius: 50%;
+    top: -17em;
+    filter: blur(6em);
+    animation: blink 100ms infinite;
+}
+@keyframes blink{
+    to{
+        filter: blur(6em) opacity(0.8);
+    }
+}
+#candle1 {
+    transform: translateZ(50px) scale(1.1); /* Більша та ближча */
+}
+
+#candle2 {
+
+    transform: translateZ(-50px) scale(0.9); /* Менша та далі */
+}
+
+#candle3 {
+    transform: translateZ(30px) scale(1.05); /* Трохи ближча */
+}
+
+#candle4 {
+    transform: translateZ(-30px) scale(0.95); /* Трохи далі */
+}
+
+#candle5 {
+    transform: translateZ(60px) scale(1.2); /* Найближча */
+}
+
+#candle6 {
+
+    transform: translateZ(-60px) scale(0.8); /* Найдальша */
+}
+
+#candle7 {
+    transform: translateZ(40px) scale(1.15); /* Досить близько */
+}
+
+#candle8 {
+
+    transform: translateZ(-40px) translateY(30px) scale(0.85); /* Досить далеко */
+}
+
+#candle9 {
+    transform: translateZ(20px) scale(1.1); /* Трохи ближче */
+}
+
+#candle10 {
+    transform: translateZ(-20px) scale(0.9); /* Трохи далі */
+}
+
+#candle11 {
+    transform: translateZ(70px) scale(1.3); /* Дуже близько */
+}
+
+#candle12 {
+
+    transform: translateZ(-70px) translateY(30px) scale(0.7); /* Дуже далеко */
+}
+
+#candle13 {
+    transform: translateZ(10px) scale(1.05); /* Ледь ближче */
+}
+
+#candle14 {
+    transform: translateZ(-10px) scale(0.95); /* Ледь далі */
+}
+
+#candle15 {
+    height: 140px;
+    transform: translateZ(0px) translateY(-180px) scale(1.0); /* На середній відстані */
+}
+
+#candle16 {
+    height: 100px;
+    transform: translateZ(100px) translateY(-170px) scale(1.3); /* Піднята вгору та ближче  ++*/
+}
+
+#candle17 {
+    height: 70px;
+    transform: translateZ(-70px) translateY(-150px) scale(1.7); /* Піднята вгору та далеко найбільша */
+}
+
+#candle18 {
+    height: 120px;
+    transform: translateZ(-50px) translateY(-170px) scale(1.05); /* Піднята вгору трохи ближче ++ */
+}
+
+#candle19 {
+
+    transform: translateZ(-100px) translateY(-160px) scale(0.95); /* Піднята вгору трохи далі +++ */
+}
+
+#candle20 {
+    height: 120px;
+    transform: translateZ(-200px) translateY(-160px) scale(1.0); /* Піднята вгору на середній відстані ++ */
+}
+
+
+
+#candle-row {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє розміщення елементів у кілька рядів */
+    justify-content: space-around; /* Розподіл свічок рівномірно */
+    align-items: center;
+    perspective: 1000px; /* Створює 3D-ефект */
+    margin-bottom: -160px; /* або більше, залежно від потреб */
+}
+
+
