@@ -104,7 +104,6 @@ html, body {
 
 }
 
-
 .first-section-team {
     display: flex;
     flex-direction: column;
@@ -191,6 +190,10 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.first-column {
+    margin: 0;
 }
 
 
@@ -459,7 +462,8 @@ html, body {
 
 
 #candle-row {
-    display: flex;
+    width: 90%;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -467,11 +471,13 @@ html, body {
     margin-bottom: -160px;
 }
 
+.glow, .flames, .thread, #candle-row {
+    overflow-y: visible;
+}
 
-@media (max-width: 1439px) {
+@media (max-width: 1800px) {
     #candle-row {
         display: none;
-
     }
 
 }

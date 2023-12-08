@@ -21,10 +21,7 @@ function Team() {
             <h1 className='team-header team2-header'>Our <span className='etno-letters2'>T</span>eam</h1>
 
             <img src={stripe} className='etno-stripe-team' alt="Decorative Stripe"/>
-            <section className='first-column'>
-
-
-
+            <section className='first-column' style={{margin: 0}}>
                 <div className="image-text-container-team">
                     <figure>
                         <div id='image-container-team'>
