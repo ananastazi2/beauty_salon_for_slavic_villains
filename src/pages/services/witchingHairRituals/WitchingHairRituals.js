@@ -27,14 +27,15 @@ function WitchingHairRituals() {
   const [bubbles, setBubbles] = useState([]);
   useEffect(() => {
     bubbleAmount = randInRange(minBubbles, maxBubbles);
-    bubbleAmount = 15;
-    [...Array(bubbleAmount)].map(
-      async (e, i) => {
-          await new Promise(r => setTimeout(r, randBubbleDelay));
-          let span = <span key={i} style={{ '--i': randInRange(minBubbleValue, maxBubbleValue), order: randInRange(0, bubbleAmount) }}  />
-          setBubbles(prev => [...prev, span]);
-    })
+    const newBubbles = [];
+    for (let i = 0; i < bubbleAmount; i++) {
+      const delay = randBubbleDelay();
+      const span = <span key={`bubble-${i}-${delay}`} style={{ '--i': randInRange(minBubbleValue, maxBubbleValue), order: randInRange(0, bubbleAmount) }} />;
+      newBubbles.push(span);
+    }
+    setBubbles(newBubbles);
   }, []);
+
 
   return (
       <>

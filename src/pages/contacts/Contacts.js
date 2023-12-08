@@ -47,7 +47,8 @@ function Contacts() {
                         </div>
                         <div className='input-group'>
                             <input type='email' id='email' name='email' placeholder='Your email address' required
-                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                                   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+
 
 
                         </div>
