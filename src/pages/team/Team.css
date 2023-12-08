@@ -2,6 +2,24 @@ html, body {
     min-width: 375px;
 }
 
+
+.team-header {
+    text-align: center;
+    font-size: 51px;
+    font-weight: normal;
+    margin-top: 5%;
+}
+
+.team2-header {
+    margin: 0;
+    margin-top: 3%;
+}
+
+.etno-letters2 {
+    font-family: 'Galaktika';
+    font-weight: 400;
+}
+
 #image-container-team {
     position: relative;
     width: 250px;
