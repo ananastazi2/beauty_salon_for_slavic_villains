@@ -33,13 +33,12 @@
     color: #fff;
 }
 
-.services-dropdown-menu.inactive {
-    display: none;
+.services-dropdown-menu.invisible {
     opacity: 0;
     transition: 0.5s ease;
 }
 
-.services-dropdown-menu.active {
+.services-dropdown-menu.visible {
     opacity: 1;
     transition:  0.5s ease;
 }
