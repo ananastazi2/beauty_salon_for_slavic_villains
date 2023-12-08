@@ -90,6 +90,11 @@
     cursor: pointer;
 }
 
+.to-services:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 .to-services-label {
     font-size: 24px;
     grid-column-start: 1;

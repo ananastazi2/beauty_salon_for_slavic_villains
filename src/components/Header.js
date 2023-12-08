@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import './Header.css'
 import logo from '../images/logo.png'
 import Hamburger from './Hamburger'
+import DropdownMenu from '../components/DropdownMenu.js'
 
 function Header() {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -12,6 +13,16 @@ function Header() {
 
     document.body.style.overflow = showNavbar ? 'auto' : 'hidden'
   }
+
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
   
   return (
     <header className='general-header'>
@@ -26,9 +37,13 @@ function Header() {
             </div>
           </div>
 
-          <ul className={`${showNavbar && "active"}`}>
+          <ul className={`${showNavbar && "active"}`} id='menu-header'>
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/services">Services</NavLink></li>
+            <li  onMouseEnter={handleMouseEnter}
+                 onMouseLeave={handleMouseLeave} className='dropdown-menu'>
+              <NavLink to="/services">Services</NavLink>
+              <DropdownMenu isVisible={isDropdownVisible} />  
+            </li>
             <li id='li-logo'><img src={logo} width='auto' id='logo' /></li>
             <li><NavLink to="/team">Team</NavLink></li>
             <li><NavLink to="/contacts">Contacts</NavLink></li>

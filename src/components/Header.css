@@ -2,7 +2,7 @@ header {
     margin-top: 3vh;
 }
 
-.navbar ul {
+#menu-header {
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -15,7 +15,7 @@ header {
     list-style-type: none;
 }
 
-.navbar ul a {
+#menu-header a {
     color: #FFF;
     text-decoration: none;
 
@@ -27,11 +27,11 @@ header {
     line-height: normal;
 }
 
-.navbar ul a.active {
+#menu-header a.active {
     position: relative;
 }
 
-.navbar ul a.active:after {
+#menu-header a.active:after {
     content: "";
     position: absolute;
     background-image: url(../images/etnoSymbolsDetails/uderlined_nav_item_active_page.png);
@@ -48,8 +48,22 @@ header {
     padding-right: 7vw;
 }
 
+.dropdown-menu {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    font-size: 16px !important;;
+}
+
+/* .dropdown-menu li a.active::after {
+    background: none !important;
+} */
+
 @media(min-width: 1441px) {
-    .navbar ul a {
+    #menu-header  a {
         font-size: 30px;
     }
 }
@@ -65,13 +79,13 @@ header {
         height: auto;
     }
     
-    .navbar ul a {
+    #menu-header a {
         font-size: 26px;
     }
 }
 
 @media (max-width: 856px) {
-    .navbar ul a {
+    #menu-header a {
         font-size: 23px;
     }
 }
@@ -86,7 +100,7 @@ header {
         text-align: center;
     }
 
-    .navbar ul a {
+    #menu-header a {
         font-size: 20px;
     }
 }
@@ -98,13 +112,13 @@ header {
 }
 
 @media (max-width: 654px) {
-    .navbar ul a {
+    #menu-header a {
         font-size: 18px;
     }
 }
 
 @media (max-width: 596px) {
-    .navbar ul a {
+    #menu-header a {
         font-size: 16px;
     }
 
@@ -163,7 +177,7 @@ header {
         display: none;
     }
 
-    .navbar ul {
+    #menu-header {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -180,12 +194,12 @@ header {
         background-color: rgba(0, 18, 22, 0.97);
     }
     
-    .navbar ul.active {
+    #menu-header.active {
         opacity: 1;
         transition: opacity 0.5s ease-in-out;
     }
     
-    .navbar ul a {
+    #menu-header a {
         font-size: 28px;
     }
 }
